@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Daily Puzzles — Become a Tester / Testçi Ol</title>
+<meta name="description" content="Join the closed test of Pixel Daily Puzzles, a daily puzzle game for Android. Pixel Daily Puzzles kapalı testine katıl.">
+<meta property="og:title" content="Pixel Daily Puzzles — closed test / kapalı test">
+<meta property="og:description" content="A new set of puzzles every day: word levels, Top Answers built from players' own answers, Draw &amp; Rate. · Her gün yeni bölümler.">
+<meta property="og:image" content="https://noirpixelgames.github.io/assets/icon_512.png">
+<meta property="og:url" content="https://noirpixelgames.github.io/pixel-daily-puzzles/test.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icon_512.png">
+<style>
+  :root {
+    --bg: #0e0c12; --panel: #17141d; --line: #2e2838;
+    --text: #ece9f2; --muted: #a49cb4; --gold: #ffc94d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; overflow-x: hidden; }
+  header { text-align: center; padding-top: 28px; }
+  header img.hero { width: 100%; max-width: 620px; border-radius: 14px; border: 1px solid var(--line); }
+  .hero.fallback {
+    width: 100%; max-width: 620px; margin: 0 auto; aspect-ratio: 1024 / 500;
+    border-radius: 14px; border: 1px solid var(--line);
+    background: radial-gradient(120% 120% at 20% 0%, #3a2d55 0%, #17141d 60%, #0e0c12 100%);
+    display: grid; place-items: center; text-align: center; padding: 16px;
+  }
+  .hero.fallback .name { font-size: clamp(1.2rem, 5vw, 2.1rem); font-weight: 800; letter-spacing: 0.5px; }
+  .hero.fallback .sub { color: var(--gold); font-size: clamp(0.8rem, 2.6vw, 1rem); margin-top: 6px; }
+  h1 { font-size: 1.7rem; margin: 22px 0 6px; line-height: 1.2; }
+  h2 { font-size: 1.25rem; margin: 40px 0 10px; color: var(--gold); }
+  .tag { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 18px 0; }
+  ol.steps { list-style: none; counter-reset: s; padding: 0; margin: 0; }
+  ol.steps li { counter-increment: s; position: relative; padding: 14px 0 14px 52px; border-bottom: 1px solid var(--line); }
+  ol.steps li:last-child { border-bottom: 0; }
+  ol.steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 12px;
+    width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: #1a1408;
+    font-weight: 700; display: grid; place-items: center;
+  }
+  a { color: var(--gold); overflow-wrap: anywhere; }
+  .btn {
+    display: inline-block; background: var(--gold); color: #1a1408; font-weight: 700;
+    padding: 12px 20px; border-radius: 10px; text-decoration: none; margin: 8px 8px 0 0;
+  }
+  .btn.ghost { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+  .shots { display: flex; gap: 10px; overflow-x: auto; padding: 4px 0 8px; max-width: 100%; }
+  .shots img { width: 180px; border-radius: 10px; border: 1px solid var(--line); flex: 0 0 auto; }
+  .note { color: var(--muted); font-size: 0.92rem; }
+  .lang2 { border-top: 2px solid var(--line); margin-top: 48px; padding-top: 8px; }
+  footer { color: var(--muted); font-size: 0.88rem; margin-top: 40px; text-align: center; }
+  ul.facts { padding-left: 1.1rem; }
+  ul.facts li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <!-- Feature grafiği hazır olunca bu bloğu şununla değiştir:
+       <img class="hero" src="../assets/pdp_feature_1024x500.png" alt="Pixel Daily Puzzles"> -->
+  <div class="hero fallback">
+    <div>
+      <div class="name">PIXEL DAILY PUZZLES</div>
+      <div class="sub">a new set of puzzles every day · her gün yeni bölümler</div>
+    </div>
+  </div>
+  <h1>Pixel Daily Puzzles — join the closed test</h1>
+  <p class="tag">Word levels, Top Answers built from what other players typed, and Draw &amp; Rate. One streak to keep. Android · 13+</p>
+  <p><a class="btn" href="https://groups.google.com/g/noirpixel-testers">Join the group and test it</a>
+  <a class="btn ghost" href="#tr">Türkçe</a></p>
+</header>
+
+<div class="card">
+  <h2 style="margin-top:6px">How to join (2 minutes)</h2>
+  <ol class="steps">
+    <li><strong>Join the test group.</strong> <a href="https://groups.google.com/g/noirpixel-testers">groups.google.com/g/noirpixel-testers</a> → <em>Join group</em>,
+      with <strong>the Google account your Play Store uses</strong> — that address is how Google identifies a tester.
+      <div class="note">Rather not join a group? Mail the address to <strong>iletisim.noirpixel@gmail.com</strong> and I'll add it the same day.</div></li>
+    <li><strong>Opt in to the test.</strong><br>
+      <a href="https://play.google.com/apps/testing/com.noirpixel.pixeldailypuzzles">play.google.com/apps/testing/com.noirpixel.pixeldailypuzzles</a>
+      → <em>Become a tester</em>.
+      <div class="note">If it says "app not available", your account is not on the list yet — try again a little later. Order matters.</div></li>
+    <li><strong>Install from Play and keep it for 14 days.</strong><br>
+      <a href="https://play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles">play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles</a>
+      <div class="note">You don't have to play every day; staying installed is what counts. Google counts 12 testers opted in for 14 continuous days, and an uninstall resets the counter.</div></li>
+  </ol>
+</div>
+
+<h2>What is it?</h2>
+<!-- Ekran görüntüleri hazır olunca bu bloğu aç:
+<div class="shots">
+  <img src="../assets/pdp_shot_1.jpg" alt="Daily levels">
+  <img src="../assets/pdp_shot_2.jpg" alt="Top Answers">
+  <img src="../assets/pdp_shot_3.jpg" alt="Draw &amp; Rate">
+</div>
+-->
+<ul class="facts">
+  <li><strong>A new set of levels every day</strong> — word puzzles and pictograms, with XP, levels and a streak you won't want to break.</li>
+  <li><strong>Top Answers:</strong> levels are built from what other players typed into the survey of the day. Answers are counted and shown only as percentages, never one by one.</li>
+  <li><strong>Draw &amp; Rate:</strong> draw the prompt, other players rate it, and the day's winners land in the gallery. Your nickname stays anonymous ("Drawer #1234").</li>
+  <li><strong>Archive:</strong> past days stay playable — open them with a rewarded ad, or with VIP.</li>
+  <li><strong>Collection</strong> with a rarity mark: you see how many players finished a level.</li>
+  <li>Play Games achievements, a daily leaderboard and optional cloud save. Ads are optional (rewarded only) and VIP removes them.</li>
+</ul>
+
+<h2>During the test</h2>
+<ul class="facts">
+  <li>If anything breaks, or a screen leaves you unsure what to do, tell me: <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a>. One sentence is enough; a screenshot is gold.</li>
+  <li><strong>Server-side parts are being switched on gradually</strong> (survey, drawings, leaderboard). If one of them is quiet on the build you have, that's expected — but do tell me if it errors out.</li>
+  <li><strong>Drawings and survey answers are public content</strong> — other players see them. Please don't type personal information, and use the report button on anything that doesn't belong.</li>
+  <li><strong>Please don't tap ads on purpose</strong> — Google treats that as invalid traffic on test accounts.</li>
+  <li>Purchase screens (VIP, hints) are in test mode: no real money is charged.</li>
+  <li><strong>Test for test:</strong> if you're a developer in the same 12-tester situation, send me your opt-in or group link at the address above — I install the same day, keep it the full 14 days and report the bugs I hit.</li>
+  <li>I'll ping you when it goes live; your name can go on the thanks list if you want.</li>
+</ul>
+
+<div class="lang2" id="tr">
+<header style="padding-top:18px">
+  <h1>Pixel Daily Puzzles — kapalı teste katıl</h1>
+  <p class="tag">Kelime bölümleri, oyuncuların kendi cevaplarından üretilen Popüler Cevap ve Çiz Puanla. Korunacak bir serin var. Android · 13+</p>
+  <p><a class="btn" href="https://groups.google.com/g/noirpixel-testers">Gruba katıl ve testçi ol</a></p>
+</header>
+
+<div class="card">
+  <h2 style="margin-top:6px">Nasıl katılırım? (2 dakika)</h2>
+  <ol class="steps">
+    <li><strong>Test grubuna katıl.</strong> <a href="https://groups.google.com/g/noirpixel-testers">groups.google.com/g/noirpixel-testers</a> → <em>Gruba katıl</em>.
+      Telefonundaki <strong>Play Store'un kullandığı Google hesabıyla</strong> katıl; Google testçiyi o adresten tanıyor.
+      <div class="note">Grup istemiyorsan adresini <strong>iletisim.noirpixel@gmail.com</strong> adresine yolla, aynı gün listeye eklerim.</div></li>
+    <li><strong>Teste kaydol.</strong><br>
+      <a href="https://play.google.com/apps/testing/com.noirpixel.pixeldailypuzzles">play.google.com/apps/testing/com.noirpixel.pixeldailypuzzles</a>
+      → <em>Test kullanıcısı ol</em>.
+      <div class="note">"Uygulama kullanılamıyor" diyorsa hesabın henüz listede değildir — biraz sonra tekrar dene, sıra önemli.</div></li>
+    <li><strong>Play'den kur ve 14 gün silme.</strong><br>
+      <a href="https://play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles">play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles</a>
+      <div class="note">Her gün oynamak zorunda değilsin; kurulu kalması yeterli. Google'ın saydığı şey 12 kişinin 14 gün boyunca kurulu tutması, silen olursa sayaç başa döner.</div></li>
+  </ol>
+</div>
+
+<h2>Oyun ne?</h2>
+<ul class="facts">
+  <li><strong>Her gün yeni bölümler</strong> — kelime bulmacaları ve piktogramlar; XP, seviye ve bozmak istemeyeceğin bir seri.</li>
+  <li><strong>Popüler Cevap:</strong> bölümler, oyuncuların "günün anketi"ne yazdığı cevaplardan üretilir. Cevaplar sayılır ve yalnızca yüzde olarak gösterilir, tek tek kimseye gösterilmez.</li>
+  <li><strong>Çiz Puanla:</strong> verilen kelimeyi çiz, diğer oyuncular puanlasın; günün kazananları galeriye girer. Takma adın anonim kalır ("Çizer #1234").</li>
+  <li><strong>Arşiv:</strong> geçmiş günler oynanabilir kalır — ödüllü reklamla ya da VIP ile açılır.</li>
+  <li><strong>Koleksiyon</strong> ve nadirlik göstergesi: bir bölümü kaç kişinin bitirdiğini görürsün.</li>
+  <li>Play Games başarımları, günlük sıralama ve isteğe bağlı bulut kaydı. Reklamlar isteğe bağlıdır (yalnızca ödüllü), VIP reklamları kaldırır.</li>
+</ul>
+
+<h2>Test sırasında</h2>
+<ul class="facts">
+  <li>Bir şey bozulursa, bir ekranda ne yapacağını anlamazsan yaz: <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a>. Tek cümle bile yeter, ekran görüntüsü altın değerinde.</li>
+  <li><strong>Sunucu tarafı özellikler kademeli açılıyor</strong> (anket, çizimler, sıralama). Elindeki sürümde biri sessizse bu normal — ama hata veriyorsa mutlaka haber ver.</li>
+  <li><strong>Çizimler ve anket cevapları herkese açık içeriktir</strong> — diğer oyuncular görür. Kişisel bilgi yazma, uygunsuz bir şey görürsen şikayet düğmesini kullan.</li>
+  <li><strong>Reklamlara bilerek tıklama</strong> — Google test hesaplarında bunu geçersiz trafik sayıyor.</li>
+  <li>Satın alma ekranları (VIP, ipucu) test modunda: gerçek para çekilmez.</li>
+  <li><strong>Teste test:</strong> sen de aynı 12 testçi derdindeki bir geliştiriciysen opt-in ya da grup linkini yukarıdaki adrese yolla — aynı gün kurar, 14 gün boyunca tutar ve karşılaştığım hataları bildiririm.</li>
+  <li>Yayına çıkınca haber veririm; istersen adın teşekkür listesine girer.</li>
+</ul>
+</div>
+
+<footer>
+  Noir Pixel Games · <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a><br>
+  <a href="privacy-policy.html">Privacy / Gizlilik</a> · <a href="terms-of-service.html">Terms / Koşullar</a> · <a href="delete-data.html">Delete my data / Verilerimi sil</a><br>
+  <a href="../test.html">Pixel Roll Dungeon — closed test / kapalı test</a>
+</footer>
+
+</div>
+</body>
+</html>
