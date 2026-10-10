@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pixel Hype Puzzle — Become a Tester / Testçi Ol</title>
-<meta name="description" content="Join the closed test of Pixel Hype Puzzle, a party quiz and drawing game for Android. Pixel Hype Puzzle kapalı testine katıl.">
+<meta name="description" content="Join the closed test of Pixel Hype Puzzle: guessing games, trivia, a shared drawing board and live rooms against other players. Pixel Hype Puzzle kapalı testine katıl.">
 <meta property="og:title" content="Pixel Hype Puzzle — closed test / kapalı test">
-<meta property="og:description" content="Draw, guess, compare, argue. Built from what other players answer. · Çiz, tahmin et, kıyasla, tartış.">
-<meta property="og:image" content="https://noirpixelgames.github.io/assets/icon_512.png">
+<meta property="og:description" content="Guess what everyone else said, draw against the clock, play live rooms 1v1. · Herkesin ne dediğini tahmin et, çiz, canlı odalarda oyna.">
+<meta property="og:image" content="https://noirpixelgames.github.io/assets/php_shot_home.jpg">
 <meta property="og:url" content="https://noirpixelgames.github.io/pixel-hype-puzzle/test.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -50,7 +50,10 @@
     padding: 12px 20px; border-radius: 10px; text-decoration: none; margin: 8px 8px 0 0;
   }
   .btn.ghost { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+  .shots { display: flex; gap: 10px; overflow-x: auto; padding: 4px 0 8px; max-width: 100%; }
+  .shots img { width: 180px; border-radius: 10px; border: 1px solid var(--line); flex: 0 0 auto; }
   .note { color: var(--muted); font-size: 0.92rem; }
+  .soon { color: var(--gold); font-size: 0.92rem; }
   .lang2 { border-top: 2px solid var(--line); margin-top: 48px; padding-top: 8px; }
   footer { color: var(--muted); font-size: 0.88rem; margin-top: 40px; text-align: center; }
   ul.facts { padding-left: 1.1rem; }
@@ -69,7 +72,7 @@
     </div>
   </div>
   <h1>Pixel Hype Puzzle — join the closed test</h1>
-  <p class="tag">Three tabs: Hype, Puzzles, Snacks. The fun parts are built from what other players answered. Android · 13+</p>
+  <p class="tag">Guessing games, trivia, a shared drawing board, and live rooms against other players. Android · 13+</p>
   <p><a class="btn" href="https://groups.google.com/g/noirpixel-testers">Join the group and test it</a>
   <a class="btn ghost" href="#tr">Türkçe</a></p>
 </header>
@@ -91,19 +94,33 @@
 </div>
 
 <h2>What is it?</h2>
+<div class="shots">
+  <img src="../assets/php_shot_home.jpg" alt="The day's games">
+  <img src="../assets/php_shot_survey.jpg" alt="Top Answers">
+  <img src="../assets/php_shot_quiz.jpg" alt="Trivia">
+  <img src="../assets/php_shot_wheel.jpg" alt="Letter Wheel">
+</div>
 <ul class="facts">
-  <li><strong>Hype tab</strong> — the loud one. Draw &amp; Rate (you draw, others rate, the day's winners go to the gallery), Top Answers (levels built from what players typed), quiz rounds, "which one is bigger / older / heavier" comparisons, hot &amp; cold guessing.</li>
-  <li><strong>Puzzles tab</strong> — quick, competitive word rounds with a timer. Not the calm daily kind.</li>
-  <li><strong>Snacks tab</strong> — short filler games, unlimited play, no daily limit.</li>
-  <li><strong>You're never alone, but you never wait.</strong> Matches are asynchronous: if someone is in the queue you play them, otherwise you play a real past player's run. No empty lobbies.</li>
-  <li>Leaderboards, Play Games achievements, optional cloud save. Ads are optional (rewarded only) and VIP removes them.</li>
+  <li><strong>Guess what everyone else said.</strong> Top Answers gives you a question hundreds of players already answered — name what most of them said, not what you think is right.</li>
+  <li><strong>Draw &amp; Rate.</strong> Everyone gets the same prompt, draws it in a minute, then rates what the others drew. Winners are posted the next morning; Quick Rounds come every five minutes if you cannot wait a day.</li>
+  <li><strong>Words, out loud.</strong> Forbidden Word is Taboo turned around. Letter Wheel wants a word for every letter of the alphabet. Hot &amp; Cold hides a word and tells you only how far off you are, alphabetically.</li>
+  <li><strong>How big, really?</strong> Size It asks how many times taller a whale is than a penguin — and you find out you were not close. Trivia and Battleship round out the day.</li>
+  <li><strong>Snack games, unlimited:</strong> 2048, Pins, Anagram, Shikaku and Escape — numbered ladders, no clock, no streak to protect.</li>
+  <li>Dark theme by default, large text and a colour-blind palette in Settings. No account needed to play.</li>
+</ul>
+
+<h2>Coming in the next test build</h2>
+<ul class="facts">
+  <li><strong>Live rooms.</strong> A quick 1v1 match against a stranger, a room you open for friends with a six-letter code, or a public hall where a new match starts every couple of minutes.</li>
+  <li>Five games play live so far: Trivia, Top Answers, Size It, Hot &amp; Cold and Letter Wheel. You pick a nickname and a pixel avatar; there is no free-text chat.</li>
+  <li class="soon">The build you install today may not have these yet — they arrive in the next one, and testers get it automatically.</li>
 </ul>
 
 <h2>During the test</h2>
 <ul class="facts">
   <li>If anything breaks, or a screen leaves you unsure what to do, tell me: <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a>. One sentence is enough; a screenshot is gold.</li>
   <li><strong>The game grows during the test.</strong> New modes land as updates — that's expected, not a bug. Keep it installed and you'll see them arrive.</li>
-  <li><strong>Server-side parts are being switched on gradually.</strong> If a mode is quiet on the build you have, that's expected — but do tell me if it errors out.</li>
+  <li><strong>Server-side parts are being switched on gradually</strong> (survey, drawings, live rooms). If one of them is quiet on the build you have, that's expected — but do tell me if it errors out.</li>
   <li><strong>Drawings and survey answers are public content</strong> — other players see them. Please don't type personal information, and use the report button on anything that doesn't belong.</li>
   <li><strong>Please don't tap ads on purpose</strong> — Google treats that as invalid traffic on test accounts.</li>
   <li>Purchase screens (VIP, hints) are in test mode: no real money is charged.</li>
@@ -113,7 +130,7 @@
 <div class="lang2" id="tr">
 <header style="padding-top:18px">
   <h1>Pixel Hype Puzzle — kapalı teste katıl</h1>
-  <p class="tag">Üç sekme: Hype, Bulmaca, Çerez. Eğlenceli kısımlar diğer oyuncuların cevaplarından üretiliyor. Android · 13+</p>
+  <p class="tag">Tahmin oyunları, bilgi turları, ortak çizim tahtası ve diğer oyunculara karşı canlı odalar. Android · 13+</p>
   <p><a class="btn" href="https://groups.google.com/g/noirpixel-testers">Gruba katıl ve testçi ol</a></p>
 </header>
 
@@ -135,18 +152,26 @@
 
 <h2>Oyun ne?</h2>
 <ul class="facts">
-  <li><strong>Hype sekmesi</strong> — gürültülü olan. Çiz Puanla (sen çiziyorsun, başkaları puanlıyor, günün kazananları galeriye giriyor), Popüler Cevap (bölümler oyuncuların yazdıklarından üretiliyor), bilgi yarışması turları, "hangisi daha büyük / eski / ağır" kıyaslamaları, sıcak-soğuk tahmin.</li>
-  <li><strong>Bulmaca sekmesi</strong> — süreli, rekabetçi, hızlı kelime turları. Sakin günlük bulmaca değil.</li>
-  <li><strong>Çerez sekmesi</strong> — kısa doldurma oyunları, sınırsız oynanır, günlük limit yok.</li>
-  <li><strong>Hiç yalnız değilsin ama hiç beklemiyorsun.</strong> Eşleşmeler eşzamansız: sırada biri varsa onunla, yoksa daha önce oynamış gerçek bir oyuncunun kaydıyla oynuyorsun. Boş lobi yok.</li>
-  <li>Sıralama tabloları, Play Games başarımları, isteğe bağlı bulut kaydı. Reklamlar isteğe bağlı (yalnızca ödüllü), VIP reklamları kaldırıyor.</li>
+  <li><strong>Herkesin ne dediğini tahmin et.</strong> Popüler Cevap sana yüzlerce oyuncunun çoktan cevapladığı bir soru verir — doğru olduğunu düşündüğünü değil, çoğunluğun söylediğini bul.</li>
+  <li><strong>Çiz Puanla.</strong> Herkese aynı konu gelir, bir dakikada çizersin, sonra başkalarının çizdiklerini puanlarsın. Kazananlar ertesi sabah açıklanır; bekleyemiyorsan Hızlı Tur her beş dakikada bir döner.</li>
+  <li><strong>Kelimeler, sesli.</strong> Yasaklı Kelime ters Tabu. Harf Çarkı alfabenin her harfi için bir kelime ister. Sıcak Soğuk bir kelime saklar ve sana yalnızca alfabetik olarak ne kadar uzakta olduğunu söyler.</li>
+  <li><strong>Gerçekte ne kadar büyük?</strong> Boyut Oranı balinanın penguenin kaç katı olduğunu sorar — ve yaklaşamadığını fark edersin. Bilgi Yarışması ve Amiral Battı da günün içinde.</li>
+  <li><strong>Çerez oyunlar, sınırsız:</strong> 2048, Çivi, Anagram, Shikaku ve Kaçış — numaralı merdivenler, saat yok, seri kaygısı yok.</li>
+  <li>Varsayılan koyu tema, Ayarlar'da büyük yazı ve renk körü paleti. Oynamak için hesap gerekmez.</li>
+</ul>
+
+<h2>Sıradaki test sürümünde</h2>
+<ul class="facts">
+  <li><strong>Canlı odalar.</strong> Yabancı birine karşı hızlı 1v1 maç, arkadaşlarına altı harfli kodla açtığın oda, ya da birkaç dakikada bir yeni maç başlayan herkese açık salon.</li>
+  <li>Şimdilik beş oyun canlı oynanıyor: Bilgi Yarışması, Popüler Cevap, Boyut Oranı, Sıcak Soğuk ve Harf Çarkı. Takma ad ve piksel avatar seçiyorsun; serbest sohbet yok.</li>
+  <li class="soon">Bugün kurduğun sürümde bunlar henüz olmayabilir — sıradaki sürümle geliyor ve testçilere otomatik iniyor.</li>
 </ul>
 
 <h2>Test sırasında</h2>
 <ul class="facts">
   <li>Bir şey bozulursa, bir ekranda ne yapacağını anlamazsan yaz: <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a>. Tek cümle bile yeter, ekran görüntüsü altın değerinde.</li>
   <li><strong>Oyun test boyunca büyüyecek.</strong> Yeni modlar güncelleme olarak gelecek — bu hata değil, plan. Kurulu tut, geldiklerini göreceksin.</li>
-  <li><strong>Sunucu tarafı özellikler kademeli açılıyor.</strong> Elindeki sürümde bir mod sessizse bu normal — ama hata veriyorsa mutlaka haber ver.</li>
+  <li><strong>Sunucu tarafı özellikler kademeli açılıyor</strong> (anket, çizimler, canlı odalar). Elindeki sürümde biri sessizse bu normal — ama hata veriyorsa mutlaka haber ver.</li>
   <li><strong>Çizimler ve anket cevapları herkese açık içeriktir</strong> — diğer oyuncular görür. Kişisel bilgi yazma, uygunsuz bir şey görürsen şikayet düğmesini kullan.</li>
   <li><strong>Reklamlara bilerek tıklama</strong> — Google test hesaplarında bunu geçersiz trafik sayıyor.</li>
   <li>Satın alma ekranları (VIP, ipucu) test modunda: gerçek para çekilmez.</li>
