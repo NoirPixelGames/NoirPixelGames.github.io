@@ -4,6 +4,7 @@
 window.NPG_SHARED = {
 
   en: {
+    "tag.preorder":"Pre-order","btn.preorder":"Pre-order on Google Play",
     "nav.games":"Games","nav.studio":"Studio","nav.collab":"Work with us",
     "nav.press":"Press","nav.contact":"Contact","nav.story":"Our story",
     "crumb.home":"Home","crumb.games":"Games","crumb.studio":"Studio","crumb.press":"Press",
@@ -26,6 +27,7 @@ window.NPG_SHARED = {
   },
 
   es: {
+    "tag.preorder":"Reserva","btn.preorder":"Resérvalo en Google Play",
     "nav.games":"Juegos","nav.studio":"Estudio","nav.collab":"Colaborar",
     "nav.press":"Prensa","nav.contact":"Contacto","nav.story":"Nuestra historia",
     "crumb.home":"Inicio","crumb.games":"Juegos","crumb.studio":"Estudio","crumb.press":"Prensa",
@@ -48,6 +50,7 @@ window.NPG_SHARED = {
   },
 
   pt: {
+    "tag.preorder":"Pré-venda","btn.preorder":"Fazer pré-venda no Google Play",
     "nav.games":"Jogos","nav.studio":"Estúdio","nav.collab":"Parcerias",
     "nav.press":"Imprensa","nav.contact":"Contato","nav.story":"Nossa história",
     "crumb.home":"Início","crumb.games":"Jogos","crumb.studio":"Estúdio","crumb.press":"Imprensa",
@@ -70,6 +73,7 @@ window.NPG_SHARED = {
   },
 
   de: {
+    "tag.preorder":"Vorbestellung","btn.preorder":"Bei Google Play vorbestellen",
     "nav.games":"Spiele","nav.studio":"Studio","nav.collab":"Zusammenarbeit",
     "nav.press":"Presse","nav.contact":"Kontakt","nav.story":"Unsere Geschichte",
     "crumb.home":"Startseite","crumb.games":"Spiele","crumb.studio":"Studio","crumb.press":"Presse",
@@ -92,6 +96,7 @@ window.NPG_SHARED = {
   },
 
   fr: {
+    "tag.preorder":"Précommande","btn.preorder":"Précommander sur Google Play",
     "nav.games":"Jeux","nav.studio":"Studio","nav.collab":"Collaborer",
     "nav.press":"Presse","nav.contact":"Contact","nav.story":"Notre histoire",
     "crumb.home":"Accueil","crumb.games":"Jeux","crumb.studio":"Studio","crumb.press":"Presse",
@@ -114,6 +119,7 @@ window.NPG_SHARED = {
   },
 
   it: {
+    "tag.preorder":"Preordine","btn.preorder":"Preordina su Google Play",
     "nav.games":"Giochi","nav.studio":"Studio","nav.collab":"Collaborazioni",
     "nav.press":"Stampa","nav.contact":"Contatti","nav.story":"La nostra storia",
     "crumb.home":"Home","crumb.games":"Giochi","crumb.studio":"Studio","crumb.press":"Stampa",
@@ -136,6 +142,7 @@ window.NPG_SHARED = {
   },
 
   id: {
+    "tag.preorder":"Pra-pesan","btn.preorder":"Pra-pesan di Google Play",
     "nav.games":"Game","nav.studio":"Studio","nav.collab":"Kerja sama",
     "nav.press":"Pers","nav.contact":"Kontak","nav.story":"Cerita kami",
     "crumb.home":"Beranda","crumb.games":"Game","crumb.studio":"Studio","crumb.press":"Pers",

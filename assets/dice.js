@@ -135,6 +135,7 @@
   }
 
   function toggle(d) {
+    stage.classList.add("touched");      // nabiz ipucu artik gereksiz
     if (busy || rollsUsed === 0 || rollsUsed >= MAX_ROLLS) return;
     d.locked = !d.locked;
     d.el.classList.toggle('locked', d.locked);
@@ -288,7 +289,7 @@
   pipsPaint();
   label();
   hint(t('start'));
-  btn.addEventListener("click", roll);
+  btn.addEventListener("click", function () { stage.classList.add("touched"); roll(); });
 
   var mb = stage.querySelector("[data-mute]");
   if (mb) {
