@@ -305,3 +305,172 @@
     document.addEventListener('DOMContentLoaded', boot);
   } else { boot(); }
 })();
+
+/* ==========================================================================
+   EK BILESENLER — lightbox, kadro oklari, kunye kopyalama
+   site.js ana IIFE'sinden bagimsiz; biri patlarsa digerleri calisir.
+   ========================================================================== */
+(function () {
+  'use strict';
+  var reduced = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- 1) Ekran goruntusu buyutme ---------- */
+  function lightbox() {
+    var galeriler = document.querySelectorAll('.shots');
+    if (!galeriler.length) return;
+
+    var kutu = document.createElement('div');
+    kutu.className = 'lb';
+    kutu.setAttribute('role', 'dialog');
+    kutu.setAttribute('aria-modal', 'true');
+    kutu.innerHTML =
+      '<button class="lb-btn lb-close" type="button" aria-label="Kapat">\u2715</button>' +
+      '<button class="lb-btn lb-prev" type="button" aria-label="\u00d6nceki">\u2039</button>' +
+      '<img alt="">' +
+      '<button class="lb-btn lb-next" type="button" aria-label="Sonraki">\u203a</button>' +
+      '<span class="lb-say"></span>';
+    document.body.appendChild(kutu);
+
+    var im = kutu.querySelector('img');
+    var say = kutu.querySelector('.lb-say');
+    var liste = [], sira = 0, aktifOge = null;
+
+    function goster(i) {
+      sira = (i + liste.length) % liste.length;
+      var k = liste[sira];
+      im.src = k.currentSrc || k.src;
+      im.alt = k.alt || '';
+      say.textContent = (sira + 1) + ' / ' + liste.length;
+      var tek = liste.length < 2;
+      kutu.querySelector('.lb-prev').style.display = tek ? 'none' : '';
+      kutu.querySelector('.lb-next').style.display = tek ? 'none' : '';
+    }
+    function ac(gal, k) {
+      liste = [].slice.call(gal.querySelectorAll('img'));
+      aktifOge = document.activeElement;
+      goster(liste.indexOf(k));
+      kutu.classList.add('on');
+      document.body.style.overflow = 'hidden';
+      kutu.querySelector('.lb-close').focus();
+    }
+    function kapat() {
+      kutu.classList.remove('on');
+      document.body.style.overflow = '';
+      im.removeAttribute('src');
+      if (aktifOge && aktifOge.focus) aktifOge.focus();
+    }
+
+    for (var g = 0; g < galeriler.length; g++) {
+      (function (gal) {
+        gal.addEventListener('click', function (e) {
+          var k = e.target.closest ? e.target.closest('img') : null;
+          if (k && gal.contains(k)) ac(gal, k);
+        });
+      })(galeriler[g]);
+    }
+
+    kutu.addEventListener('click', function (e) {
+      if (e.target === kutu) return kapat();
+      if (e.target.closest('.lb-close')) return kapat();
+      if (e.target.closest('.lb-prev')) return goster(sira - 1);
+      if (e.target.closest('.lb-next')) return goster(sira + 1);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!kutu.classList.contains('on')) return;
+      if (e.key === 'Escape') kapat();
+      else if (e.key === 'ArrowLeft') goster(sira - 1);
+      else if (e.key === 'ArrowRight') goster(sira + 1);
+    });
+    // mobilde kaydirma
+    var x0 = null;
+    kutu.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    kutu.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var d = e.changedTouches[0].clientX - x0;
+      if (Math.abs(d) > 48) goster(sira + (d < 0 ? 1 : -1));
+      x0 = null;
+    }, { passive: true });
+  }
+
+  /* ---------- 2) Kadro: ok butonlari + ilerleme ---------- */
+  function kadro() {
+    var r = document.querySelector('.roster');
+    if (!r) return;
+
+    var sarma = document.createElement('div');
+    sarma.className = 'roster-wrap';
+    r.parentNode.insertBefore(sarma, r);
+    sarma.appendChild(r);
+
+    var geri = document.createElement('button');
+    geri.className = 'roster-nav prev'; geri.type = 'button';
+    geri.setAttribute('aria-label', 'Geri'); geri.innerHTML = '\u2039';
+    var ileri = document.createElement('button');
+    ileri.className = 'roster-nav next'; ileri.type = 'button';
+    ileri.setAttribute('aria-label', 'İleri'); ileri.innerHTML = '\u203a';
+    var cubuk = document.createElement('div');
+    cubuk.className = 'roster-bar'; cubuk.innerHTML = '<i></i>';
+    var dolgu = cubuk.querySelector('i');
+
+    sarma.appendChild(geri); sarma.appendChild(ileri);
+    sarma.appendChild(cubuk);
+
+    function adim() {
+      var f = r.querySelector('figure');
+      return f ? (f.getBoundingClientRect().width + 14) * 2 : 300;
+    }
+    function guncelle() {
+      var max = r.scrollWidth - r.clientWidth;
+      var oran = max > 0 ? r.scrollLeft / max : 0;
+      var gen = max > 0 ? Math.max(12, (r.clientWidth / r.scrollWidth) * 100) : 100;
+      dolgu.style.width = gen + '%';
+      dolgu.style.marginLeft = (oran * (100 - gen)) + '%';
+      geri.disabled = r.scrollLeft < 4;
+      ileri.disabled = r.scrollLeft > max - 4;
+    }
+    function kay(yon) {
+      r.scrollBy({ left: yon * adim(), behavior: reduced ? 'auto' : 'smooth' });
+    }
+    geri.addEventListener('click', function () { kay(-1); });
+    ileri.addEventListener('click', function () { kay(1); });
+    r.addEventListener('scroll', guncelle, { passive: true });
+    window.addEventListener('resize', guncelle);
+    guncelle();
+  }
+
+  /* ---------- 3) Kunyeyi panoya kopyala ---------- */
+  function kunye() {
+    var b = document.querySelector('[data-copy-facts]');
+    if (!b) return;
+    var tablo = document.querySelector('.facts');
+    if (!tablo) { b.style.display = 'none'; return; }
+
+    b.addEventListener('click', function () {
+      var satirlar = [].slice.call(tablo.querySelectorAll('tr')).map(function (tr) {
+        var h = tr.querySelector('th'), d = tr.querySelector('td');
+        return h && d ? h.textContent.trim() + ': ' + d.textContent.trim() : '';
+      }).filter(Boolean);
+      var metin = satirlar.join('\n') + '\n' + location.origin + location.pathname;
+
+      var bitti = function () {
+        var eski = b.textContent;
+        b.textContent = '\u2713';
+        b.classList.add('ok');
+        setTimeout(function () { b.textContent = eski; b.classList.remove('ok'); }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(metin).then(bitti, function () {});
+      } else {
+        var t = document.createElement('textarea');
+        t.value = metin; document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); bitti(); } catch (e) {}
+        document.body.removeChild(t);
+      }
+    });
+  }
+
+  function basla() { try { lightbox(); } catch (e) {} try { kadro(); } catch (e) {} try { kunye(); } catch (e) {} }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', basla);
+  else basla();
+})();

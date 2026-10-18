@@ -4,6 +4,7 @@
 window.NPG_SHARED = {
 
   en: {
+    "facts.copy":"Copy fact sheet","assets.pdp":"Pixel Daily Puzzles art","assets.kradot":"Pixel Kradot TD characters",
     "tag.preorder":"Pre-order","btn.preorder":"Pre-order on Google Play",
     "nav.games":"Games","nav.studio":"Studio","nav.collab":"Work with us",
     "nav.press":"Press","nav.contact":"Contact","nav.story":"Our story",
@@ -27,6 +28,7 @@ window.NPG_SHARED = {
   },
 
   es: {
+    "facts.copy":"Copiar ficha","assets.pdp":"Imágenes de Pixel Daily Puzzles","assets.kradot":"Personajes de Pixel Kradot TD",
     "tag.preorder":"Reserva","btn.preorder":"Resérvalo en Google Play",
     "nav.games":"Juegos","nav.studio":"Estudio","nav.collab":"Colaborar",
     "nav.press":"Prensa","nav.contact":"Contacto","nav.story":"Nuestra historia",
@@ -50,6 +52,7 @@ window.NPG_SHARED = {
   },
 
   pt: {
+    "facts.copy":"Copiar ficha","assets.pdp":"Imagens de Pixel Daily Puzzles","assets.kradot":"Personagens de Pixel Kradot TD",
     "tag.preorder":"Pré-venda","btn.preorder":"Fazer pré-venda no Google Play",
     "nav.games":"Jogos","nav.studio":"Estúdio","nav.collab":"Parcerias",
     "nav.press":"Imprensa","nav.contact":"Contato","nav.story":"Nossa história",
@@ -73,6 +76,7 @@ window.NPG_SHARED = {
   },
 
   de: {
+    "facts.copy":"Fact Sheet kopieren","assets.pdp":"Pixel Daily Puzzles Grafiken","assets.kradot":"Pixel Kradot TD Figuren",
     "tag.preorder":"Vorbestellung","btn.preorder":"Bei Google Play vorbestellen",
     "nav.games":"Spiele","nav.studio":"Studio","nav.collab":"Zusammenarbeit",
     "nav.press":"Presse","nav.contact":"Kontakt","nav.story":"Unsere Geschichte",
@@ -96,6 +100,7 @@ window.NPG_SHARED = {
   },
 
   fr: {
+    "facts.copy":"Copier la fiche","assets.pdp":"Visuels de Pixel Daily Puzzles","assets.kradot":"Personnages de Pixel Kradot TD",
     "tag.preorder":"Précommande","btn.preorder":"Précommander sur Google Play",
     "nav.games":"Jeux","nav.studio":"Studio","nav.collab":"Collaborer",
     "nav.press":"Presse","nav.contact":"Contact","nav.story":"Notre histoire",
@@ -119,6 +124,7 @@ window.NPG_SHARED = {
   },
 
   it: {
+    "facts.copy":"Copia la scheda","assets.pdp":"Immagini di Pixel Daily Puzzles","assets.kradot":"Personaggi di Pixel Kradot TD",
     "tag.preorder":"Preordine","btn.preorder":"Preordina su Google Play",
     "nav.games":"Giochi","nav.studio":"Studio","nav.collab":"Collaborazioni",
     "nav.press":"Stampa","nav.contact":"Contatti","nav.story":"La nostra storia",
@@ -142,6 +148,7 @@ window.NPG_SHARED = {
   },
 
   id: {
+    "facts.copy":"Salin lembar fakta","assets.pdp":"Gambar Pixel Daily Puzzles","assets.kradot":"Karakter Pixel Kradot TD",
     "tag.preorder":"Pra-pesan","btn.preorder":"Pra-pesan di Google Play",
     "nav.games":"Game","nav.studio":"Studio","nav.collab":"Kerja sama",
     "nav.press":"Pers","nav.contact":"Kontak","nav.story":"Cerita kami",

@@ -218,7 +218,7 @@ section + section{border-top:1px solid var(--line)}
   border:1px solid var(--line-2); color:var(--muted); border-radius:999px; padding:3px 10px;
 }
 .tags .tag.live{border-color:#2f6f49; color:#6ddc9a; background:rgba(45,120,78,.12)}
-.tags .tag.test{border-color:var(--gold-2); color:var(--gold); background:rgba(255,201,77,.08)}
+.tags .tag.test{border-color:#2f6f49; color:#6ddc9a; background:rgba(45,120,78,.14)}
 .tags .tag.dev{border-color:var(--line-2); color:var(--violet); background:rgba(139,107,216,.1)}
 
 /* ---------- kart izgarasi ---------- */
@@ -1103,10 +1103,10 @@ section + section::before{
   content:""; display:inline-block; width:6px; height:6px; border-radius:50%;
   margin-right:7px; vertical-align:1px;
 }
-.tags .tag.test::before{background:var(--gold); box-shadow:0 0 7px rgba(255,201,77,.8)}
+.tags .tag.test::before{background:#6ddc9a; box-shadow:0 0 8px rgba(109,220,154,.8)}
 .tags .tag.dev::before{background:var(--violet); box-shadow:0 0 7px rgba(139,107,216,.7)}
-.tags .tag.pre{border-color:#2f6f49; color:#6ddc9a; background:rgba(45,120,78,.14)}
-.tags .tag.pre::before{background:#6ddc9a; box-shadow:0 0 8px rgba(109,220,154,.8)}
+.tags .tag.pre{border-color:var(--gold-2); color:var(--gold); background:rgba(255,201,77,.10)}
+.tags .tag.pre::before{background:var(--gold); box-shadow:0 0 9px rgba(255,201,77,.9)}
 
 /* Dokunma hedefleri en az 44px */
 @media (pointer:coarse){
@@ -1114,3 +1114,89 @@ section + section::before{
   .mute{width:44px; height:44px}
   .menu a{padding:14px 12px}
 }
+
+/* ==========================================================================
+   CAPA KAYMASI — sabit ust bar basligi ezmesin
+   ========================================================================== */
+:target,section[id],article[id],div[id]{scroll-margin-top:84px}
+
+/* ==========================================================================
+   HIKAYE — editoryal dizgi
+   ========================================================================== */
+.story{position:relative; padding-left:26px; max-width:64ch}
+.story::before{
+  content:""; position:absolute; left:0; top:6px; bottom:34px; width:2px; border-radius:2px;
+  background:linear-gradient(180deg, var(--gold) 0%, var(--violet) 45%, transparent 100%);
+  opacity:.55;
+}
+.story p:first-child{
+  font-size:1.2rem; line-height:1.6; color:var(--text);
+}
+.story p:first-child::first-letter{
+  float:left; font-size:3.1rem; line-height:.88; padding:4px 12px 0 0;
+  color:var(--gold); font-weight:700;
+}
+.story p{position:relative}
+.story .story-note{
+  border-left:0; padding-left:0; margin-top:1.8em;
+  display:inline-block; background:rgba(255,201,77,.07);
+  border:1px solid var(--gold-dim); border-radius:999px; padding:8px 16px;
+}
+@media (max-width:600px){
+  .story{padding-left:18px}
+  .story p:first-child::first-letter{font-size:2.5rem}
+}
+
+/* ==========================================================================
+   KADRO — ok butonlari ve ilerleme
+   ========================================================================== */
+.roster-wrap{position:relative}
+.roster-nav{
+  position:absolute; top:46%; transform:translateY(-50%); z-index:4;
+  width:42px; height:42px; border-radius:50%; display:none; place-items:center;
+  background:rgba(11,9,16,.82); backdrop-filter:blur(8px);
+  border:1px solid var(--line-2); color:var(--text); cursor:pointer;
+  font-size:1.2rem; line-height:1; transition:all .2s ease;
+}
+.roster-nav:hover{border-color:var(--gold); color:var(--gold)}
+.roster-nav[disabled]{opacity:.25; cursor:default}
+.roster-nav.prev{left:-6px}
+.roster-nav.next{right:-6px}
+@media (hover:hover) and (pointer:fine){ .roster-nav{display:grid} }
+.roster-bar{height:3px; border-radius:3px; background:var(--line); overflow:hidden; margin-top:4px}
+.roster-bar i{display:block; height:100%; width:20%; border-radius:3px;
+  background:linear-gradient(90deg,var(--gold),var(--violet)); transition:width .2s ease, margin-left .2s ease}
+
+/* ==========================================================================
+   LIGHTBOX — ekran goruntusu buyutme
+   ========================================================================== */
+.shots img{cursor:zoom-in}
+.lb{
+  position:fixed; inset:0; z-index:100; display:none;
+  background:rgba(6,5,9,.93); backdrop-filter:blur(10px);
+  align-items:center; justify-content:center; padding:52px 16px;
+}
+.lb.on{display:flex}
+.lb img{
+  max-width:min(94vw,860px); max-height:86vh; width:auto; height:auto;
+  border-radius:var(--r); border:1px solid var(--line-2);
+  box-shadow:0 30px 80px rgba(0,0,0,.8);
+}
+.lb-btn{
+  position:absolute; background:rgba(23,20,29,.9); border:1px solid var(--line-2);
+  color:var(--text); width:46px; height:46px; border-radius:50%; cursor:pointer;
+  display:grid; place-items:center; font-size:1.3rem; line-height:1;
+}
+.lb-btn:hover{border-color:var(--gold); color:var(--gold)}
+.lb-close{top:16px; right:16px}
+.lb-prev{left:14px; top:50%; transform:translateY(-50%)}
+.lb-next{right:14px; top:50%; transform:translateY(-50%)}
+.lb-say{
+  position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+  font-family:var(--mono); font-size:.78rem; color:var(--muted); letter-spacing:.08em;
+}
+@media (max-width:600px){ .lb-btn{width:44px;height:44px} .lb{padding:60px 8px} }
+
+/* kunye kopyala */
+.copy-facts{margin:-6px 0 14px}
+.copy-facts.ok{border-color:var(--gold); color:var(--gold)}

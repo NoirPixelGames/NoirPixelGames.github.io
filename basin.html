@@ -66,6 +66,7 @@
 
         <div class="reveal">
           <h2 data-i18n="facts.title">Künye</h2>
+          <button class="btn ghost sm copy-facts" type="button" data-copy-facts data-i18n="facts.copy">Künyeyi kopyala</button>
           <table class="facts">
             <tr><th data-i18n="facts.name">Stüdyo</th><td>Noir Pixel Games</td></tr>
             <tr><th data-i18n="facts.loc">Konum</th><td data-i18n="facts.loc.v">Türkiye</td></tr>
@@ -91,14 +92,24 @@
             <a class="btn ghost sm" href="assets/feature_1024x500.png" download data-i18n="assets.dl">İndir</a>
           </div>
           <div class="asset">
-            <img src="assets/shot_battle.jpg" alt="">
+            <img src="assets/shot_battle.jpg" alt="" width="480" height="853">
             <div class="n"><b data-i18n="assets.shots">Oyun içi ekran görüntüleri</b><span>shot_gate · shot_battle · shot_reward</span></div>
             <a class="btn ghost sm" href="oyun/pixel-roll-dungeon.html" data-i18n="assets.see">Gör</a>
           </div>
           <div class="asset">
-            <img src="assets/php_shot_quiz.jpg" alt="">
+            <img src="assets/php_shot_quiz.jpg" alt="" width="360" height="640">
             <div class="n"><b data-i18n="assets.php">Pixel Hype Puzzle görüntüleri</b><span>php_shot_home · quiz · survey · wheel</span></div>
             <a class="btn ghost sm" href="oyun/pixel-hype-puzzle.html" data-i18n="assets.see">Gör</a>
+          </div>
+          <div class="asset">
+            <img src="assets/pdp_feature.webp" alt="" width="64" height="64" loading="lazy">
+            <div class="n"><b data-i18n="assets.pdp">Pixel Daily Puzzles görselleri</b><span>pdp_feature · pdp_shot_1–3</span></div>
+            <a class="btn ghost sm" href="oyun/pixel-daily-puzzles.html" data-i18n="assets.see">Gör</a>
+          </div>
+          <div class="asset">
+            <img src="assets/kradot/orc_king.webp" alt="" width="64" height="64" loading="lazy">
+            <div class="n"><b data-i18n="assets.kradot">Pixel Kradot TD karakterleri</b><span>17 karakter · şeffaf PNG</span></div>
+            <a class="btn ghost sm" href="oyun/pixel-kradot-td.html" data-i18n="assets.see">Gör</a>
           </div>
         </div>
 
@@ -139,9 +150,45 @@
 
 <footer>
   <div class="wrap">
-    <div class="foot-bottom" style="margin:0;border:0;padding:0">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="./" style="margin-bottom:12px">
+          <img src="assets/icon_64.webp" alt="" width="64" height="64" style="width:32px;height:32px">
+          <span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span>
+        </a>
+        <p class="muted" style="font-size:.9rem;max-width:30ch" data-i18n="foot.blurb">Bağımsız oyun stüdyosu. Telefona sığan, tam boy oyunlar.</p>
+      </div>
+      <div>
+        <h4 data-i18n="foot.games">Oyunlar</h4>
+        <ul>
+          <li><a href="oyun/pixel-roll-dungeon.html">Pixel Roll Dungeon</a></li>
+          <li><a href="oyun/pixel-daily-puzzles.html">Pixel Daily Puzzles</a></li>
+          <li><a href="oyun/pixel-hype-puzzle.html">Pixel Hype Puzzle</a></li>
+          <li><a href="oyunlar.html" data-i18n="foot.allgames">Tüm oyunlar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.studio">Stüdyo</h4>
+        <ul>
+          <li><a href="studyo.html" data-i18n="foot.about">Biz kimiz</a></li>
+          <li><a href="studyo.html#collab" data-i18n="foot.collab">İş birliği</a></li>
+          <li><a href="basin.html" data-i18n="foot.press">Basın kiti</a></li>
+          <li><a href="https://groups.google.com/g/noirpixel-testers" data-i18n="social.testers">Testçi grubu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.legal">Hukuki</h4>
+        <ul>
+          <li><a href="legal.html" data-i18n="foot.alllegal">Tüm belgeler</a></li>
+          <li><a href="privacy-policy.html" data-i18n="foot.privacy">Gizlilik politikası</a></li>
+          <li><a href="terms-of-service.html" data-i18n="foot.terms">Kullanım koşulları</a></li>
+          <li><a href="delete-data.html" data-i18n="foot.delete">Verilerimi sil</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
       <span>© <span data-year>2026</span> Noir Pixel Games</span>
-      <span><a href="legal.html" data-i18n="foot.legal">Hukuki belgeler</a> · <a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a></span>
+      <span><a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a></span>
     </div>
   </div>
 </footer>
