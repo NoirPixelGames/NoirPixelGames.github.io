@@ -221,6 +221,15 @@
       }
       document.documentElement.lang = lang;
       pick.value = lang;
+
+      // dile gore degisen gorseller (magaza kareleri yalnizca tr/en/de/pt var)
+      var imgDil = ({ tr: "tr", en: "en", de: "de", pt: "pt_br" })[lang] || "en";
+      var resimler = document.querySelectorAll("[data-img-src]");
+      for (var ri = 0; ri < resimler.length; ri++) {
+        var kalip = resimler[ri].getAttribute("data-img-src");
+        var yeniYol = kalip.replace("{dil}", imgDil);
+        if (resimler[ri].getAttribute("src") !== yeniYol) resimler[ri].setAttribute("src", yeniYol);
+      }
       var t = document.querySelector("[data-type]");
       if (t && t.getAttribute("data-type-" + lang)) {
         t.setAttribute("data-type", t.getAttribute("data-type-" + lang));

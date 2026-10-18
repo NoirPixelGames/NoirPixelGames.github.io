@@ -68,6 +68,11 @@ body::after{
 }
 
 img,svg,video{max-width:100%; display:block}
+/* HTML width/height nitelikleri CLS icin sart; ama yukseklik CSS ile
+   serbest birakilmazsa gorsel sabit yuksekliğe zorlanip eziliyor.
+   Yukseklik gerekli olan yerlerde (object-fit kullanan kapaklar) daha
+   ozel kurallar bunu zaten eziyor. */
+img{height:auto}
 a{color:var(--gold); text-decoration:none}
 a:hover{text-decoration:underline}
 :focus-visible{outline:2px solid var(--gold); outline-offset:3px; border-radius:6px}
