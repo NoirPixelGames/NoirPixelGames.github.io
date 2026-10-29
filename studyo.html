@@ -2,220 +2,88 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Stüdyo — Noir Pixel Games</title>
-<meta name="description" content="Noir Pixel Games kimdir, nasıl çalışır, neye inanır ve kimlerle iş birliği yapar.">
-<meta name="theme-color" content="#0b0910">
-<link rel="icon" href="assets/icon_64.png?v=2">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<script>document.documentElement.className+=' js'</script>
-<link rel="canonical" href="https://noirpixelgames.github.io/studyo.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Noir Pixel Games">
-<meta property="og:url" content="https://noirpixelgames.github.io/studyo.html">
-<meta property="og:title" content="Stüdyo — Noir Pixel Games">
-<meta property="og:description" content="Noir Pixel Games kimdir, nasıl çalışır, neye inanır ve kimlerle iş birliği yapar.">
-<meta property="og:image" content="https://noirpixelgames.github.io/assets/og_studio.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Noir Pixel Games’in hikayesi, çalışma biçimi ve ilkeleri. Türkiye’den bağımsız bir mobil oyun stüdyosu.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
 </head>
-<body>
-<div class="atmos" aria-hidden="true"><video id="atmos" muted loop playsinline preload="none" poster="assets/video/atmos-poster.webp"></video></div>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon_64.png" alt="" width="32" height="32"><span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span></a>
-    <button class="burger" type="button" aria-label="Menü" aria-expanded="false">☰</button>
-    <nav class="menu">
-      <a href="oyunlar.html" data-i18n="nav.games">Oyunlar</a>
-      <a href="studyo.html" aria-current="page" data-i18n="nav.studio">Stüdyo</a>
-      <a href="#story" data-i18n="nav.story">Hikâyemiz</a>
-      <a href="#collab" data-i18n="nav.collab">İş Birliği</a>
-      <a href="basin.html" data-i18n="nav.press">Basın</a>
-      <a href="index.html#contact" data-i18n="nav.contact">İletişim</a>
-      <select class="langpick" id="langpick" aria-label="Language / Dil"></select>
-    </nav>
-  </div>
-</header>
-
+<body data-page="studyo">
 <main>
-  <div class="pagehead lit" style="--accent:#1f7f8a">
+  <section class="section" style="padding-top:clamp(140px,20vh,220px)">
     <div class="wrap">
-      <p class="crumb"><a href="./" data-i18n="crumb.home">Ana sayfa</a> / <span data-i18n="crumb.studio">Stüdyo</span></p>
-      <h1 data-i18n="page.title">Stüdyo</h1>
-      <p class="lede" style="max-width:700px" data-i18n="page.sub">Türkiye'den bağımsız bir oyun stüdyosuyuz. Aynı anda altı proje yürütüyoruz; tasarımdan sunucuya, mağaza sayfasından güncellemeye kadar her şey aynı elden çıkıyor.</p>
+      <span class="label reveal">Stüdyo</span>
+      <h1 class="display reveal" style="margin:22px 0 30px;max-width:14ch">Küçük stüdyo, <em>kısa</em> karar yolu.</h1>
+      <p class="lede reveal">Türkiye’den bağımsız bir oyun stüdyosuyuz. Aynı anda on proje yürütüyoruz; tasarımdan sunucuya, mağaza sayfasından güncellemeye kadar her şey aynı elden çıkıyor.</p>
     </div>
-  </div>
+  </section>
 
-  <section id="how">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="how.eyebrow">Nasıl çalışıyoruz</p>
-        <h2 data-i18n="how.title">Komite yok, kısa yol var</h2>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <span class="num">01</span>
-          <h3 data-i18n="how.c1.t">Fikir aynı hafta oynanır</h3>
-          <p data-i18n="how.c1.d">Bir mekanik tuttuysa prototipi günler içinde elde oynanır hâle geliyor. Tutmadıysa da aynı hızda kapanıyor.</p>
-        </div>
-        <div class="card reveal">
-          <span class="num">02</span>
-          <h3 data-i18n="how.c2.t">Ortak altyapı</h3>
-          <p data-i18n="how.c2.d">Altı proje aynı motoru, aynı sunucu mimarisini ve aynı yayın hattını kullanıyor. Bir projede çözülen sorun diğer beşine de geçiyor.</p>
-        </div>
-        <div class="card reveal">
-          <span class="num">03</span>
-          <h3 data-i18n="how.c3.t">Önce gerçek oyuncu</h3>
-          <p data-i18n="how.c3.d">Her oyun kapalı testten geçiyor. Testçi grubundan gelen geri bildirim, sürüm notlarının ana girdisi.</p>
-        </div>
-        <div class="card reveal">
-          <span class="num">04</span>
-          <h3 data-i18n="how.c4.t">Yayınlanmayan oyun yok</h3>
-          <p data-i18n="how.c4.d">Çekmecede oyun biriktirmiyoruz. Başlanan proje mağazaya çıkar, test edilir ve güncellenmeye devam eder.</p>
-        </div>
+  <section class="section" id="hikaye">
+    <div class="wrap two">
+      <div style="position:sticky;top:120px"><span class="label reveal">Hikayemiz</span><h2 class="h2 reveal" style="margin-top:20px">Adımızdaki <em>“Pixel”</em></h2></div>
+      <div class="prose reveal">
+        <p>Üç küçük oyunla başladım. Her şeyi elle çiziyordum — karakterleri, animasyonları, arayüzü. Yavaştı ama benimdi.</p>
+        <p>Başladıktan kısa süre sonra evi sel aldı. Cihazların hiçbiri bir daha açılmadı. Drive’da duran birkaç dosyayı kurtardım, gerisi gitti. Dört beş ay sonra, elimde kalanla yeniden başladım.</p>
+        <p>Tam bitiyor dediğim noktada bilgisayar arızalandı. Tamirciye bıraktım, orada yandı. O kadar acele ediyordum ki yedekler yarım kalmıştı. Toplamda bir yılım gitti.</p>
+        <p>Stüdyonun adını değiştirmedim. <strong>“Pixel” bugün yaptığımız işi anlatmıyor — oyunlarımız artık pixel art değil. Nereden başladığımı anlatıyor.</strong></p>
+        <p class="quote" style="margin-top:36px">Yedekler artık her gün alınıyor.</p>
       </div>
     </div>
   </section>
 
-  <section id="vision">
+  <section class="section">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="vision.eyebrow">Vizyon</p>
-        <h2 data-i18n="vision.title">Oyuncuyu sıkıştırmayan oyun</h2>
-        <p class="muted" data-i18n="vision.sub">Mobilde en kolay yol, oyuncuyu reklamla ve sayaçla sıkıştırmak. Biz tersini deniyoruz: oyun kendi başına ayakta durmalı, para kazanma kısmı oyuncunun tercihi olmalı. Bu dört madde, her projenin yayın şartı.</p>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <h3 data-i18n="v1.t">Karar, şans değil</h3>
-          <p data-i18n="v1.d">Zar da atsan bulmaca da çözsen seçim senin olmalı. Sistemler sığ değil derin; öğrenilecek bir şey hep kalıyor.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="v2.t">Çevrimdışı çalışır</h3>
-          <p data-i18n="v2.d">Metroda, uçakta, çekmeyen yerde oyun açılır ve oynanır. İnternet sadece sıralama ve bulut kaydı için.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="v3.t">Karanlık desen yok</h3>
-          <p data-i18n="v3.d">Zorunlu reklam yok, bekleme duvarı yok, sahte aciliyet yok. Reklam sadece ödüllü ve isteğe bağlı; VIP tamamen kaldırıyor.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="v4.t">Herkes oynayabilsin</h3>
-          <p data-i18n="v4.d">Koyu tema varsayılan, büyük yazı seçeneği ve renk körü paleti ayarlarda. Hesap açmadan oynanabiliyor.</p>
-        </div>
+      <div class="head"><span class="label reveal">Nasıl çalışıyoruz</span><h2 class="h2 reveal">Komite yok, <em>kısa yol</em> var</h2></div>
+      <div class="cols">
+        <div class="item reveal"><span class="num">01</span><h3 class="h3">Fikir aynı hafta oynanır</h3><p>Bir mekanik tuttuysa prototip günler içinde elde oynanır hâle gelir. Tutmadıysa aynı hızla kapanır.</p></div>
+        <div class="item reveal" style="--d:80ms"><span class="num">02</span><h3 class="h3">Ortak altyapı</h3><p>Bütün projeler aynı motoru, aynı sunucu mimarisini ve aynı yayın hattını kullanır. Birinde çözülen sorun diğerlerine de geçer.</p></div>
+        <div class="item reveal" style="--d:160ms"><span class="num">03</span><h3 class="h3">Önce gerçek oyuncu</h3><p>Her oyun kapalı testten geçer. Testçi grubundan gelen geri bildirim, sürüm notlarının ana girdisi.</p></div>
+        <div class="item reveal" style="--d:240ms"><span class="num">04</span><h3 class="h3">Yayınlanmayan oyun yok</h3><p>Çekmecede oyun biriktirmiyoruz. Başlanan proje mağazaya çıkar, test edilir ve güncellenmeye devam eder.</p></div>
       </div>
     </div>
   </section>
 
-
-  <section id="story">
+  <section class="section" id="ilkeler">
     <div class="wrap">
-      <p class="eyebrow" data-i18n="story.eyebrow">Nereden başladık</p>
-      <h2 data-i18n="story.title">Adımızdaki &ldquo;Pixel&rdquo;</h2>
-      <div class="story reveal">
-        <p data-i18n="story.p1">Üç küçük oyunla başladım. Her şeyi elle çiziyordum — karakterleri, animasyonları, arayüzü. Yavaştı ama benimdi.</p>
-        <p data-i18n="story.p2">Başladıktan kısa süre sonra evi sel aldı. Cihazların hiçbiri bir daha açılmadı. Drive&rsquo;da duran birkaç dosyayı kurtardım, gerisi gitti. Dört beş ay sonra, elimde kalanla yeniden başladım.</p>
-        <p data-i18n="story.p3">Tam bitiyor dediğim noktada bilgisayar arızalandı. Tamirciye bıraktım, orada yandı. O kadar acele ediyordum ki yedekler yarım kalmıştı. Toplamda bir yılım gitti.</p>
-        <p data-i18n="story.p4">Stüdyonun adını değiştirmedim. &ldquo;Pixel&rdquo; bugün yaptığımız işi anlatmıyor — oyunlarımız artık pixel art değil. Nereden başladığımı anlatıyor.</p>
-        <p class="story-note" data-i18n="story.p5">Yedekler artık her gün alınıyor.</p>
+      <div class="head"><span class="label reveal">İlkelerimiz</span><h2 class="h2 reveal">Oyuncuyu <em>sıkıştırmayan</em> oyun</h2>
+        <p class="lede reveal">Mobilde en kolay yol, oyuncuyu reklamla ve sayaçla sıkıştırmak. Biz tersini deniyoruz: oyun kendi başına ayakta durmalı. Bu dört madde, her projenin yayın şartı.</p></div>
+      <div class="cols">
+        <div class="item reveal"><span class="num">01</span><h3 class="h3">Karar, şans değil</h3><p>Zar da atsan bulmaca da çözsen seçim senin olmalı. Sistemler sığ değil derin; öğrenilecek bir şey hep kalır.</p></div>
+        <div class="item reveal" style="--d:80ms"><span class="num">02</span><h3 class="h3">Çevrimdışı çalışır</h3><p>Metroda, uçakta, çekmeyen yerde oyun açılır ve oynanır. İnternet yalnız sıralama ve bulut kaydı için.</p></div>
+        <div class="item reveal" style="--d:160ms"><span class="num">03</span><h3 class="h3">Karanlık desen yok</h3><p>Zorunlu reklam, bekleme duvarı, sahte aciliyet yok. Geçiş reklamı en fazla 20 dakikada bir, yalnız molada ve geri sayımla; reklamı kaldırmak tek dokunuş.</p></div>
+        <div class="item reveal" style="--d:240ms"><span class="num">04</span><h3 class="h3">Herkes oynayabilsin</h3><p>Koyu tema varsayılan, büyük yazı, renk körü paleti ve hareketi azalt seçenekleri. Hesap açmadan oynanır.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="ai">
-    <div class="wrap">
-      <p class="eyebrow" data-i18n="ai.eyebrow">Açık olalım</p>
-      <h2 data-i18n="ai.title">Yapay zekayı nerede kullanıyoruz</h2>
-      <div class="story reveal">
-        <p data-i18n="ai.p1">Elimde eskisi kadar zaman yok, o yüzden bugün bazı görsellerde yapay zekadan yararlanıyorum. Bunu gizlemiyorum; sorulmadan söylüyorum.</p>
-        <p data-i18n="ai.p2">Ama gidiş yönü bu değil. Sırada üç oyun var — bir envanter-çanta oyunu, bir futbol menajerliği ve bir SCP oyunu. Üçünde de görsellerde yapay zeka neredeyse hiç kullanılmayacak.</p>
-        <p data-i18n="ai.p3">Kod tarafında rolü zaten dar: hata ayıklama ve acil düzeltme. Oyunun ne olacağına, nasıl oynanacağına ve neye benzeyeceğine ben karar veriyorum. Bundan sonrası da öyle olacak.</p>
+  <section class="section" id="yapay-zeka">
+    <div class="wrap two">
+      <div><span class="label reveal">Açık olalım</span><h2 class="h2 reveal" style="margin-top:20px">Yapay zekayı <em>nerede</em> kullanıyoruz</h2></div>
+      <div class="prose reveal">
+        <p>Elimde eskisi kadar zaman yok, o yüzden bugün bazı görsellerde yapay zekadan yararlanıyorum. Bunu gizlemiyorum; sorulmadan söylüyorum.</p>
+        <p>Kod tarafında rolü dar: hata ayıklama ve acil düzeltme. <strong>Oyunun ne olacağına, nasıl oynanacağına ve neye benzeyeceğine ben karar veriyorum.</strong> Bundan sonrası da öyle olacak.</p>
       </div>
     </div>
   </section>
 
-  <section id="collab">
+  <section class="section">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="collab.eyebrow">İş Birliği</p>
-        <h2 data-i18n="collab.title">Birlikte çalışmaya açığız</h2>
-        <p class="muted" data-i18n="collab.sub">Küçük stüdyo olmanın iyi tarafı: cevap aynı gün geliyor, karar tek yerden çıkıyor. Aşağıdakilerden biri sana uyuyorsa tek bir e-posta yeter.</p>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <h3 data-i18n="c1.t">Yayıncılar ve platformlar</h3>
-          <p data-i18n="c1.d">UA bütçesi, mağaza öne çıkarma veya bölgesel yayın konuşabiliriz. Oynanabilir sürüm, test metrikleri ve yol haritası hazır.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="c2.t">Sanatçılar ve ses</h3>
-          <p data-i18n="c2.d">İllüstrasyon, animasyon, arayüz, müzik ve ses efekti için serbest çalışanlarla iş yapıyoruz. Portfolyo yollaman yeterli.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="c3.t">Lokalizasyon</h3>
-          <p data-i18n="c3.d">Oyunlar çok dilli yapıya hazır. Kendi dilinde çeviri ve kültürel uyarlama yapmak isteyenlere kapımız açık.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="c4.t">İçerik üreticileri ve basın</h3>
-          <p data-i18n="c4.d">Erken erişim, basın kiti, ekran görüntüsü ve video materyali verebiliyoruz — yayın öncesi sürümler dahil.</p>
-        </div>
-      </div>
-      <div class="btn-row reveal" style="margin-top:28px">
-        <a class="btn" href="mailto:iletisim.noirpixel@gmail.com?subject=%C4%B0%C5%9F%20birli%C4%9Fi%20%E2%80%94%20Noir%20Pixel%20Games" data-i18n="collab.cta">İş birliği için yaz</a>
-        <a class="btn ghost" href="basin.html" data-i18n="collab.press">Basın kiti</a>
-      </div>
+      <dl class="facts reveal">
+        <dt>Kuruluş</dt><dd>Türkiye · bağımsız</dd>
+        <dt>Motor</dt><dd>Godot</dd>
+        <dt>Platform</dt><dd>Android (Google Play)</dd>
+        <dt>Projeler</dt><dd>10 — 2 ön kayıtta, 3 kapalı testte, 5 yapımda</dd>
+        <dt>Diller</dt><dd>Türkçe, English, Português, Deutsch ve daha fazlası</dd>
+      </dl>
+      <div class="btns reveal" style="margin-top:40px"><a class="btn solid" href="is-birligi.html">Birlikte çalışalım <span class="arr">→</span></a><a class="btn" href="basin.html">Basın kiti</a></div>
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="./" style="margin-bottom:12px">
-          <img src="assets/icon_64.png" alt="" width="64" height="64" style="width:32px;height:32px">
-          <span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span>
-        </a>
-        <p class="muted" style="font-size:.9rem;max-width:30ch" data-i18n="foot.blurb">Bağımsız oyun stüdyosu. Telefona sığan, tam boy oyunlar.</p>
-      </div>
-      <div>
-        <h4 data-i18n="foot.games">Oyunlar</h4>
-        <ul>
-          <li><a href="oyun/pixel-roll-dungeon.html">Pixel Roll Dungeon</a></li>
-          <li><a href="oyun/pixel-daily-puzzles.html">Pixel Daily Puzzles</a></li>
-          <li><a href="oyun/pixel-hype-puzzle.html">Pixel Hype Puzzle</a></li>
-          <li><a href="oyunlar.html" data-i18n="foot.allgames">Tüm oyunlar</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.studio">Stüdyo</h4>
-        <ul>
-          <li><a href="studyo.html" data-i18n="foot.about">Biz kimiz</a></li>
-          <li><a href="studyo.html#collab" data-i18n="foot.collab">İş birliği</a></li>
-          <li><a href="basin.html" data-i18n="foot.press">Basın kiti</a></li>
-          <li><a href="https://groups.google.com/g/noirpixel-testers" data-i18n="social.testers">Testçi grubu</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.legal">Hukuki</h4>
-        <ul>
-          <li><a href="legal.html" data-i18n="foot.alllegal">Tüm belgeler</a></li>
-          <li><a href="privacy-policy.html" data-i18n="foot.privacy">Gizlilik politikası</a></li>
-          <li><a href="terms-of-service.html" data-i18n="foot.terms">Kullanım koşulları</a></li>
-          <li><a href="delete-data.html" data-i18n="foot.delete">Verilerimi sil</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span data-year>2026</span> Noir Pixel Games</span>
-      <span><a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a></span>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/i18n/studyo.js"></script>
-<script src="assets/i18n.js"></script>
-<script src="assets/site.js"></script>
+<script src="data.js"></script>
+<script src="layout.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>
