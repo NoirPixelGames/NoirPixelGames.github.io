@@ -2,410 +2,163 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="4y-NRcVrwEZhDKvUMe_D9JapFj74sfvv6YDw67NrhXc" />
-<title>Noir Pixel Games — Bağımsız oyun stüdyosu</title>
-<meta name="description" content="Noir Pixel Games bağımsız bir oyun stüdyosu. Altı oyun projesi: telefona sığan, tam boy oyunlar. Pixel Roll Dungeon, Pixel Daily Puzzles, Pixel Hype Puzzle ve dahası.">
-<meta name="theme-color" content="#0b0910">
-<link rel="icon" href="assets/icon_64.png?v=2">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
-<!-- ===== DOMAINE BAGLI TEK YER (3 satir) ===== -->
-<link rel="canonical" href="https://noirpixelgames.github.io/">
-<meta property="og:url" content="https://noirpixelgames.github.io/">
-<meta property="og:image" content="https://noirpixelgames.github.io/assets/og_studio.png">
-<!-- =========================================== -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Noir Pixel Games">
-<meta property="og:title" content="Noir Pixel Games — Bağımsız oyun stüdyosu">
-<meta property="og:description" content="Telefona sığan, tam boy oyunlar. Altı oyun, tek stüdyo.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noir Pixel Games — Bağımsız mobil oyun stüdyosu</title>
+<meta name="description" content="Noir Pixel Games, Türkiye’den bağımsız bir mobil oyun stüdyosu. Zar RPG’sinden kule savunmasına, telefona sığan tam boy oyunlar. Ön kayıt ve kapalı test.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Noir Pixel Games">
+<meta property="og:title" content="Noir Pixel Games"><meta property="og:description" content="Telefona sığan, tam boy oyunlar.">
+<meta property="og:image" content="https://noirpixelgames.github.io/kit/og_1200x630.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
 </head>
-<body>
-<div class="atmos" aria-hidden="true"><video id="atmos" muted loop playsinline preload="none" poster="assets/video/atmos-poster.webp"></video></div>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="./">
-      <img src="assets/icon_64.png" alt="" width="32" height="32">
-      <span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span>
-    </a>
-    <button class="burger" type="button" aria-label="Menü" aria-expanded="false">☰</button>
-    <nav class="menu">
-      <a href="oyunlar.html" data-i18n="nav.games">Oyunlar</a>
-      <a href="studyo.html" data-i18n="nav.studio">Stüdyo</a>
-      <a href="studyo.html#collab" data-i18n="nav.collab">İş Birliği</a>
-      <a href="basin.html" data-i18n="nav.press">Basın</a>
-      <a href="#contact" data-i18n="nav.contact">İletişim</a>
-      <select class="langpick" id="langpick" aria-label="Language / Dil"></select>
-    </nav>
-  </div>
-</header>
-
+<body data-page="home">
 <main>
-
-  <!-- ============ HERO ============ -->
-  <div class="hero play">
-    <div class="herovid" aria-hidden="true">
-      <video id="herovid" muted loop playsinline preload="none"
-             poster="assets/video/hero-poster.webp"></video>
-    </div>
-    <div class="torch" aria-hidden="true"></div>
-    <div class="embers" aria-hidden="true"></div>
+  <section class="hero">
+    <div class="hero-bg" id="vitrin" aria-hidden="true"></div>
     <div class="wrap">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Bağımsız oyun stüdyosu</p>
-      <h1>
-        <span data-i18n="hero.l1">Telefona sığan,</span>
-        <span class="l2" data-i18n="hero.l2">tam boy oyunlar.</span>
-      </h1>
-      <p class="lede" data-i18n="hero.lede">Altı oyun projesi, tek stüdyo. Oyunlarımızdan birinin kalbi tam burada — dene.</p>
-
-      <!-- oynanabilir zar sahnesi: Pixel Roll Dungeon'un gerçek el kuralları -->
-      <div class="stage" id="stage">
-        <div class="tray" role="group" aria-label="Zarlar"></div>
-        <div class="readout" aria-live="polite">
-          <p class="hand"></p>
-          <p class="mult"></p>
+      <span class="label reveal">Bağımsız oyun stüdyosu · Türkiye</span>
+      <h1 class="display reveal" style="--d:80ms">Küçük ekran, <em>büyük</em> dünyalar.</h1>
+      <a class="now-showing reveal" id="simdi" href="oyunlar.html" style="--d:120ms"><span class="ns-dot"></span><span class="ns-txt">Vitrinde</span><b id="simdi-ad">Pixel Element TD</b><span class="arr">→</span></a>
+      <div class="hero-foot">
+        <div class="reveal" style="--d:160ms">
+          <p class="lede">Zarla kurulan bir zindandan dört elementli bir geçide. Derin sistemler, adil ilerleme ve oyuncuyu sıkıştırmayan reklam — her oyunumuzun yayın şartı.</p>
+          <div class="btns"><a class="btn solid" href="oyunlar.html">Oyunları keşfet <span class="arr">→</span></a><a class="btn" href="test-merkezi.html">Testçi ol</a></div>
         </div>
-        <div class="btn-row">
-          <button class="btn" type="button" data-roll>Zarları at</button>
-          <a class="btn ghost" href="oyun/pixel-roll-dungeon.html" data-i18n="hero.cta3">Gerçeğini oyna →</a>
-          <span class="rolls" aria-hidden="true"></span>
-          <button class="mute" type="button" data-mute aria-label="Sesi aç/kapat">♪</button>
-        </div>
-        <p class="hint"></p>
-      </div>
-
-      <div class="btn-row" style="justify-content:center;margin-top:30px">
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.noirpixel.pixelrolldungeon&amp;referrer=utm_source%3Dsite%26utm_campaign%3Dprereg" target="_blank" rel="noopener">Pixel Roll Dungeon · <span data-i18n="tag.preorder">Ön sipariş</span></a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles&amp;referrer=utm_source%3Dsite%26utm_campaign%3Dprereg" target="_blank" rel="noopener">Pixel Daily Puzzles · <span data-i18n="tag.preorder">Ön sipariş</span></a>
-      </div>
-      <div class="btn-row" style="justify-content:center;margin-top:14px">
-        <a class="btn ghost" href="#games" data-i18n="hero.cta1">Altı oyunu gör</a>
-        <a class="btn ghost" href="studyo.html#collab" data-i18n="hero.cta2">İş birliği yapalım</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============ OYUNLAR ============ -->
-  <section id="games" class="showcase">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="games.eyebrow">Ürünlerimiz</p>
-        <h2 data-i18n="games.title">Altı proje, tek çatı</h2>
-        <p class="muted" data-i18n="games.sub">İkisi Google Play’de ön siparişte, biri kapalı testte, diğerleri yapım aşamasında. Her birinin kendi sayfası var.</p>
-      </div>
-    </div>
-
-    <article class="show" id="s1" style="--accent:#6b35a8">
-      <span class="show-no" aria-hidden="true">01</span>
-      <div class="wrap show-in">
-        <div class="show-art"><img src="assets/feature.webp" alt="Pixel Roll Dungeon" width="1024" height="500" loading="lazy"></div>
-        <div class="show-txt">
-          <div class="tags">
-            <span class="tag pre" data-i18n="tag.preorder">Ön sipariş</span>
-            <span class="tag">Android</span>
-            <span class="tag" data-i18n="tag.offline">Çevrimdışı</span>
-          </div>
-          <h3>Pixel Roll Dungeon</h3>
-          <p data-i18n="g1.short">Zar at, poker eli kur, hasarını katla. Dark fantasy zindan RPG'si.</p>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.noirpixel.pixelrolldungeon&amp;referrer=utm_source%3Dsite%26utm_campaign%3Dprereg" target="_blank" rel="noopener" data-i18n="btn.preorder">Google Play'de ön sipariş ver</a>
-          <a class="btn ghost" href="oyun/pixel-roll-dungeon.html" data-i18n="go">İncele →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="show" id="s2" style="--accent:#1f6f94">
-      <span class="show-no" aria-hidden="true">02</span>
-      <div class="wrap show-in">
-        <div class="show-art"><img src="assets/pdp_feature.webp" alt="Pixel Daily Puzzles" width="1024" height="500" loading="lazy"></div>
-        <div class="show-txt">
-          <div class="tags">
-            <span class="tag pre" data-i18n="tag.preorder">Ön sipariş</span>
-            <span class="tag">Android</span>
-            <span class="tag" data-i18n="tag.offline">Çevrimdışı</span>
-          </div>
-          <h3>Pixel Daily Puzzles</h3>
-          <p data-i18n="g2.short">Sudoku, nonogram, hashi ve on kadar klasik bulmaca. Her sabah üç yeni bölüm.</p>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.noirpixel.pixeldailypuzzles&amp;referrer=utm_source%3Dsite%26utm_campaign%3Dprereg" target="_blank" rel="noopener" data-i18n="btn.preorder">Google Play'de ön sipariş ver</a>
-          <a class="btn ghost" href="oyun/pixel-daily-puzzles.html" data-i18n="go">İncele →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="show" id="s3" style="--accent:#a0356f">
-      <span class="show-no" aria-hidden="true">03</span>
-      <div class="wrap show-in">
-        <div class="show-art"><img src="assets/php_feature.webp" alt="Pixel Hype Puzzle" width="1024" height="500" loading="lazy"></div>
-        <div class="show-txt">
-          <div class="tags">
-            <span class="tag test" data-i18n="tag.test">Kapalı test</span>
-            <span class="tag">Android</span>
-          </div>
-          <h3>Pixel Hype Puzzle</h3>
-          <p data-i18n="g3.short">Çiz, tahmin et, tartış. Canlı odalarla oynanan parti oyunu.</p>
-          <a class="btn" href="oyun/pixel-hype-puzzle.html" data-i18n="go">İncele →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="show cut" id="s4" style="--accent:#8a6520">
-      <span class="show-no" aria-hidden="true">04</span>
-      <div class="wrap show-in">
-        <div class="show-art fig"><img src="assets/kradot/orc_king.webp" alt="Pixel Kradot TD" width="440" loading="lazy"></div>
-        <div class="show-txt">
-          <div class="tags">
-            <span class="tag dev" data-i18n="tag.dev">Yapımda</span>
-            <span class="tag" data-i18n="tag.td">Tower defense</span>
-            <span class="tag">3D</span>
-          </div>
-          <h3>Pixel Kradot TD</h3>
-          <p data-i18n="g4.short">Kendi evreni, kendi karakterleri olan 3D tower defense. Yapı tanıdık, dünya bize ait.</p>
-          <a class="btn" href="oyun/pixel-kradot-td.html" data-i18n="go">İncele →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="show type" id="s5" style="--accent:#1f8a62">
-      <span class="show-no" aria-hidden="true">05</span>
-      <div class="wrap show-in">
-        <div class="show-art cover" role="img" aria-label="Pixel FM">
-        <svg class="cover-svg" viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="fmG" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#0d3b2e"/><stop offset="1" stop-color="#07171a"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#fmG)"/>
-          <g fill="none" stroke="#5ef0b0" stroke-opacity=".32" stroke-width="1.4">
-            <rect x="26" y="22" width="348" height="256" rx="3"/>
-            <line x1="200" y1="22" x2="200" y2="278"/>
-            <circle cx="200" cy="150" r="46"/>
-            <rect x="26" y="88" width="56" height="124"/>
-            <rect x="318" y="88" width="56" height="124"/>
-          </g>
-          <g stroke="#ffc94d" stroke-opacity=".5" stroke-width="1.6" fill="none" stroke-dasharray="5 6">
-            <path d="M112 212 L182 150 L268 104"/>
-          </g>
-          <g fill="#ffc94d">
-            <circle cx="112" cy="212" r="5.5"/><circle cx="182" cy="150" r="5.5"/><circle cx="268" cy="104" r="7"/>
-          </g>
-          <g fill="#5ef0b0" fill-opacity=".75">
-            <circle cx="150" cy="96" r="4"/><circle cx="236" cy="196" r="4"/><circle cx="300" cy="150" r="4"/>
-          </g>
-        </svg>
-          <span class="cover-word">PIXEL<br>FM</span>
-        </div>
-        <div class="show-txt">
-          <div class="tags">
-            <span class="tag dev" data-i18n="tag.dev">Yapımda</span>
-            <span class="tag" data-i18n="tag.fm">Futbol menajerliği</span>
-          </div>
-          <h3>Pixel FM</h3>
-          <p data-i18n="g5.short">Saha dışını da oynatan futbol menajerliği: kulis, basın, taraftar ve soyunma odası.</p>
-          <a class="btn" href="oyun/pixel-fm.html" data-i18n="go">İncele →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="show type" id="s6" style="--accent:#4a4270">
-      <span class="show-no" aria-hidden="true">06</span>
-      <div class="wrap show-in">
-        <div class="show-art cover" role="img" aria-label="Sırada">
-        <svg class="cover-svg" viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="fxG" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#241f3a"/><stop offset="1" stop-color="#0c0a14"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#fxG)"/>
-          <g fill="none" stroke="#8b6bd8" stroke-opacity=".30" stroke-width="1.3">
-            <rect x="40" y="60" width="58" height="58" rx="7"/><rect x="108" y="60" width="58" height="58" rx="7"/>
-            <rect x="176" y="60" width="58" height="58" rx="7"/><rect x="244" y="60" width="58" height="58" rx="7"/>
-            <rect x="40" y="128" width="58" height="58" rx="7"/><rect x="108" y="128" width="58" height="58" rx="7"/>
-            <rect x="176" y="128" width="58" height="58" rx="7"/><rect x="244" y="128" width="58" height="58" rx="7"/>
-          </g>
-          <rect x="40" y="60" width="58" height="58" rx="7" fill="#8b6bd8" fill-opacity=".16"/>
-          <rect x="176" y="128" width="58" height="58" rx="7" fill="#8b6bd8" fill-opacity=".16"/>
-          <g fill="#a99adf" font-family="monospace" font-size="24" text-anchor="middle" fill-opacity=".8">
-            <text x="69" y="98">?</text><text x="205" y="166">?</text>
-          </g>
-          <rect x="40" y="206" width="214" height="16" rx="3" fill="#0b0910" stroke="#8b6bd8" stroke-opacity=".3"/>
-          <rect x="266" y="206" width="94" height="16" rx="3" fill="#8b6bd8" fill-opacity=".14"/>
-          <g stroke="#ffc94d" stroke-opacity=".55" stroke-width="2" fill="none">
-            <path d="M28 44 L28 28 L44 28"/><path d="M356 28 L372 28 L372 44"/>
-            <path d="M372 256 L372 272 L356 272"/><path d="M44 272 L28 272 L28 256"/>
-          </g>
-        </svg>
-          <span class="cover-word soon" data-i18n="g6.word">SIRADA</span>
-        </div>
-        <div class="show-txt">
-          <div class="tags"><span class="tag dev" data-i18n="tag.soon">Yazım aşamasında</span></div>
-          <h3 data-i18n="g6.title">Sırada ne var?</h3>
-          <p data-i18n="g6.short">Bir envanter-çanta oyunu ve bir SCP oyunu. İsimleri ve detayları duyurulduğunda ilk burada olacak.</p>
-          <a class="btn ghost" href="oyunlar.html" data-i18n="g6.go">Tüm oyunlar →</a>
-        </div>
-      </div>
-    </article>
-
-    <nav class="show-dots" aria-label="Oyunlar">
-      <a href="#s1"><i>01</i></a><a href="#s2"><i>02</i></a><a href="#s3"><i>03</i></a><a href="#s4"><i>04</i></a><a href="#s5"><i>05</i></a><a href="#s6"><i>06</i></a>
-    </nav>
-  </section>
-
-  <!-- ============ STUDYO OZET ============ -->
-  <section id="studio">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="studio.eyebrow">Biz Kimiz</p>
-        <h2 data-i18n="studio.title">Küçük stüdyo, kısa karar yolu</h2>
-        <p class="muted" data-i18n="studio.sub">Türkiye'den bağımsız bir oyun stüdyosuyuz. Godot ile geliştiriyor, sunucu tarafını kendimiz yazıyor, mağaza yayınını kendimiz yapıyoruz. Arada komite yok: fikir tutarsa prototip aynı hafta oynanıyor.</p>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <span class="num">01</span>
-          <h3 data-i18n="studio.c1.t">Uçtan uca kendimiz</h3>
-          <p data-i18n="studio.c1.d">Tasarım, kod, sunucu, mağaza sayfası ve güncellemeler aynı elden çıkıyor. Dış bağımlılık az, hız yüksek.</p>
-        </div>
-        <div class="card reveal">
-          <span class="num">02</span>
-          <h3 data-i18n="studio.c2.t">Aynı anda altı proje</h3>
-          <p data-i18n="studio.c2.d">Farklı türler, ortak altyapı: aynı motor, aynı sunucu mimarisi, aynı yayın hattı. Bir projede çözülen sorun diğerlerine de geçiyor.</p>
-        </div>
-        <div class="card reveal">
-          <span class="num">03</span>
-          <h3 data-i18n="studio.c3.t">Yayınlamak esas</h3>
-          <p data-i18n="studio.c3.d">Prototip klasöründe oyun biriktirmiyoruz. Yaptığımız şey mağazaya gidiyor, test ediliyor ve güncellenmeye devam ediyor.</p>
-        </div>
-      </div>
-      <p style="margin-top:26px" class="reveal">
-        <a class="btn ghost" href="studyo.html" data-i18n="studio.more">Stüdyo hakkında →</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ VIZYON ============ -->
-  <section id="vision">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow" data-i18n="vision.eyebrow">Vizyon</p>
-        <h2 data-i18n="vision.title">Oyuncuyu sıkıştırmayan oyun</h2>
-        <p class="muted" data-i18n="vision.sub">Mobilde en kolay yol, oyuncuyu reklamla ve sayaçla sıkıştırmak. Biz tersini deniyoruz: oyun kendi başına ayakta durmalı, para kazanma kısmı oyuncunun tercihi olmalı.</p>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <h3 data-i18n="vision.c1.t">Karar, şans değil</h3>
-          <p data-i18n="vision.c1.d">Zar da atsan bulmaca da çözsen seçim senin olmalı. Sistemler sığ değil derin; öğrenilecek bir şey hep kalıyor.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="vision.c2.t">Çevrimdışı çalışır</h3>
-          <p data-i18n="vision.c2.d">Metroda, uçakta, çekmeyen yerde oyun açılır ve oynanır. İnternet sadece sıralama ve bulut kaydı için.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="vision.c3.t">Karanlık desen yok</h3>
-          <p data-i18n="vision.c3.d">Zorunlu reklam yok, bekleme duvarı yok, sahte aciliyet yok. Reklam sadece ödüllü ve isteğe bağlı; VIP tamamen kaldırıyor.</p>
-        </div>
-        <div class="card reveal">
-          <h3 data-i18n="vision.c4.t">Herkes oynayabilsin</h3>
-          <p data-i18n="vision.c4.d">Koyu tema varsayılan, büyük yazı seçeneği ve renk körü paleti ayarlarda. Hesap açmadan oynanabiliyor.</p>
+        <div class="stats reveal" style="--d:240ms">
+          <div><b>10</b><span>Proje</span></div>
+          <div><b>3</b><span>Kapalı test</span></div>
+          <div><b>2</b><span>Ön kayıt</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ILETISIM ============ -->
-  <section id="contact">
-    <div class="wrap narrow">
-      <div class="sec-head center reveal" style="margin-left:auto;margin-right:auto">
-        <p class="eyebrow" data-i18n="contact.eyebrow">İletişim</p>
-        <h2 data-i18n="contact.title">Bize ulaş</h2>
+  <div class="band" aria-hidden="true"><div>
+    <span>Zar RPG</span><span>Kule savunması</span><span>Çanta savaşı</span><span>Günlük bulmaca</span><span>Parti oyunları</span><span>Futbol menajerliği</span><span>Hayatta kalma</span>
+    <span>Zar RPG</span><span>Kule savunması</span><span>Çanta savaşı</span><span>Günlük bulmaca</span><span>Parti oyunları</span><span>Futbol menajerliği</span><span>Hayatta kalma</span>
+  </div></div>
+
+  <section class="section" style="padding-bottom:clamp(40px,6vh,72px)">
+    <div class="wrap">
+      <div class="head split">
+        <div><span class="label reveal">Öne çıkan</span><h2 class="h2 reveal" style="margin-top:20px">Şu an <em>sahnede</em></h2></div>
+        <div class="rail-nav reveal"><button aria-label="Önceki" data-dir="-1">←</button><button aria-label="Sonraki" data-dir="1">→</button></div>
       </div>
-      <div class="contact-box reveal">
-        <p class="muted" style="margin:0" data-i18n="contact.line">Her konu için tek adres — iş birliği, yayıncılık, basın, hata bildirimi, testçi talebi.</p>
-        <a class="mail" href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a>
-        <div class="social" style="justify-content:center">
-          <a href="https://play.google.com/store/apps/dev?id=6997728629227523627">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.5.7-.5 1.2v17.2c0 .5.2.9.5 1.2l9.2-9.8L3.6 2.2zm11 7.5L5.9 1.6l10.6 6.1-1.9 2zM5.9 22.4l8.7-8.1 1.9 2-10.6 6.1zm11.9-9.2 2.9-1.7c.9-.5.9-1.5 0-2l-2.9-1.7-2.2 2.3 2.2 3.1z"/></svg>
-            <span data-i18n="social.play">Google Play</span>
-          </a>
-          <a href="https://groups.google.com/g/noirpixel-testers">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-3 0-9 1.5-9 4.5V21h18v-2.5c0-3-6-4.5-9-4.5z"/></svg>
-            <span data-i18n="social.testers">Testçi grubu</span>
-          </a>
-          <a href="mailto:iletisim.noirpixel@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
-            <span>E-posta</span>
-          </a>
-          <!-- SOSYAL HESAPLAR: hesap adresleri gelince asagidakileri acip doldur.
-          <a href="https://instagram.com/KULLANICIADI"><span>Instagram</span></a>
-          <a href="https://youtube.com/@KULLANICIADI"><span>YouTube</span></a>
-          <a href="https://x.com/KULLANICIADI"><span>X</span></a>
-          <a href="https://discord.gg/DAVETKODU"><span>Discord</span></a>
-          <a href="https://tiktok.com/@KULLANICIADI"><span>TikTok</span></a>
-          -->
-        </div>
+    </div>
+    <div class="rail" id="rail"></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head split">
+        <div><span class="label reveal">01 — Oyunlar</span><h2 class="h2 reveal" style="margin-top:20px">Raftaki <em>dünyalar</em></h2></div>
+        <a class="btn reveal" href="oyunlar.html">Tüm oyunlar <span class="arr">→</span></a>
+      </div>
+      <div class="grid" id="raf"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two">
+      <div><span class="label reveal">02 — Stüdyo</span><h2 class="h2 reveal" style="margin-top:20px">Adımızdaki <em>“Pixel”</em></h2></div>
+      <div class="prose reveal">
+        <p class="quote" style="margin-bottom:28px">“Stüdyonun adını değiştirmedim. Nereden başladığımı anlatıyor.”</p>
+        <p>Üç küçük, elle çizilmiş oyunla başladık. Bir sel, yanan bir bilgisayar ve kaybolan bir yıldan sonra yeniden kurduk. Bugün aynı anda on proje yürütüyoruz; tasarımdan sunucuya, mağaza sayfasından güncellemeye kadar her şey aynı elden çıkıyor.</p>
+        <a class="btn" href="studyo.html">Hikayemizi oku <span class="arr">→</span></a>
       </div>
     </div>
   </section>
 
+  <section class="section" id="ilkeler">
+    <div class="wrap">
+      <div class="head"><span class="label reveal">03 — İlkelerimiz</span><h2 class="h2 reveal">Oyuncuyu <em>sıkıştırmayan</em> oyun</h2></div>
+      <div class="cols">
+        <div class="item reveal"><span class="num">01</span><h3 class="h3">Karar, şans değil</h3><p>Zar da atsan bulmaca da çözsen seçim senin. Sistemler derin; öğrenilecek bir şey hep kalır.</p></div>
+        <div class="item reveal" style="--d:80ms"><span class="num">02</span><h3 class="h3">Çevrimdışı çalışır</h3><p>Metroda, uçakta, çekmeyen yerde açılır. İnternet yalnız sıralama ve bulut kaydı için.</p></div>
+        <div class="item reveal" style="--d:160ms"><span class="num">03</span><h3 class="h3">Karanlık desen yok</h3><p>Zorunlu reklam, bekleme duvarı, sahte aciliyet yok. Reklam seyrek, molada ve geri sayımla.</p></div>
+        <div class="item reveal" style="--d:240ms"><span class="num">04</span><h3 class="h3">Herkes oynayabilsin</h3><p>Renk körü modları, büyük yazı, hareketi azalt. Hesap açmadan oynanır.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head split">
+        <div><span class="label reveal">04 — Kapalı test</span><h2 class="h2 reveal" style="margin-top:20px">Herkesten <em>önce</em> oyna</h2></div>
+        <a class="btn solid reveal" href="test-merkezi.html">Test merkezi <span class="arr">→</span></a>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b>Gruba katıl</b><p>Play Store’da kullandığın Google hesabıyla test grubumuza katıl. Tek grup, bütün oyunlar.</p></div>
+        <div class="step reveal" style="--d:80ms"><b>Testçi ol</b><p>Oyunun test sayfasında “Test kullanıcısı ol”a dokun.</p></div>
+        <div class="step reveal" style="--d:160ms"><b>14 gün yüklü tut</b><p>Her gün oynamak şart değil. Geri bildirimin sürüm notlarının ana girdisi.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cols" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
+      <a class="panel reveal" href="is-birligi.html" style="display:grid;gap:18px">
+        <span class="label">05 — İş birliği</span><h3 class="h2" style="font-size:clamp(34px,3.6vw,52px)">Birlikte <em>çalışalım</em></h3>
+        <p class="muted" style="margin:0">Yayıncılar, sanatçılar, çevirmenler ve içerik üreticileri. Cevap aynı gün, karar tek yerden.</p><span class="link" style="justify-self:start">Ayrıntılar →</span>
+      </a>
+      <a class="panel reveal" href="basin.html" style="display:grid;gap:18px;--d:80ms">
+        <span class="label">06 — Basın</span><h3 class="h2" style="font-size:clamp(34px,3.6vw,52px)">Basın <em>kiti</em></h3>
+        <p class="muted" style="margin:0">Künye, logolar, oyun görselleri ve yayın öncesi sürüm talepleri için her şey tek sayfada.</p><span class="link" style="justify-self:start">Kiti aç →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <div class="wrap" style="display:grid;gap:28px;justify-items:center">
+      <span class="label reveal">İletişim</span>
+      <h2 class="display reveal" style="font-size:clamp(46px,7vw,112px)">Bir fikrin mi <em>var?</em></h2>
+      <a class="btn solid reveal" href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com <span class="arr">→</span></a>
+    </div>
+  </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="./" style="margin-bottom:12px">
-          <img src="assets/icon_64.png" alt="" width="32" height="32">
-          <span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span>
-        </a>
-        <p class="muted" style="font-size:.9rem;max-width:30ch" data-i18n="foot.blurb">Bağımsız oyun stüdyosu. Telefona sığan, tam boy oyunlar.</p>
-      </div>
-      <div>
-        <h4 data-i18n="foot.games">Oyunlar</h4>
-        <ul>
-          <li><a href="oyun/pixel-roll-dungeon.html">Pixel Roll Dungeon</a></li>
-          <li><a href="oyun/pixel-daily-puzzles.html">Pixel Daily Puzzles</a></li>
-          <li><a href="oyun/pixel-hype-puzzle.html">Pixel Hype Puzzle</a></li>
-          <li><a href="oyunlar.html" data-i18n="foot.allgames">Tüm oyunlar</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.studio">Stüdyo</h4>
-        <ul>
-          <li><a href="studyo.html" data-i18n="foot.about">Biz kimiz</a></li>
-          <li><a href="studyo.html#collab" data-i18n="foot.collab">İş birliği</a></li>
-          <li><a href="basin.html" data-i18n="foot.press">Basın kiti</a></li>
-          <li><a href="mailto:iletisim.noirpixel@gmail.com" data-i18n="foot.contact">İletişim</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.legal">Hukuki</h4>
-        <ul>
-          <li><a href="legal.html" data-i18n="foot.alllegal">Tüm belgeler</a></li>
-          <li><a href="privacy-policy.html" data-i18n="foot.privacy">Gizlilik politikası</a></li>
-          <li><a href="terms-of-service.html" data-i18n="foot.terms">Kullanım koşulları</a></li>
-          <li><a href="delete-data.html" data-i18n="foot.delete">Verilerimi sil</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span data-year>2026</span> Noir Pixel Games</span>
-      <span>iletisim.noirpixel@gmail.com</span>
-    </div>
-  </div>
-</footer>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Noir Pixel Games","url":"https://noirpixelgames.github.io/","logo":"https://noirpixelgames.github.io/assets/icon_512.png","email":"iletisim.noirpixel@gmail.com","description":"Bağımsız oyun stüdyosu."}
+<script src="data.js"></script>
+<script src="layout.js"></script>
+<script src="i18n.js"></script>
+<script>
+document.getElementById('raf').innerHTML = NP.GAMES.slice(0, 8).map(NP.card).join('');
+// one cikan ray: buyuk sinematik kartlar
+(() => {
+  const rail = document.getElementById('rail');
+  rail.innerHTML = NP.GAMES.filter(g => g.art && g.status !== 'dev').map((g, i) => `
+    <a class="slide reveal" href="oyun.html?g=${g.slug}" style="--c1:${g.c1};--c2:${g.c2};--d:${i * 70}ms">
+      <img src="${g.art}" alt="" loading="lazy">
+      <span class="slide-meta"><span class="st ${NP.STATUS[g.status].cls}">${NP.STATUS[g.status].label}</span>
+        <b>${g.name}</b><small>${g.lede}</small><span class="link">Oyunu gör →</span></span>
+    </a>`).join('');
+  document.querySelectorAll('.rail-nav button').forEach(b => b.addEventListener('click', () => {
+    const w = rail.querySelector('.slide').getBoundingClientRect().width + 20;
+    rail.scrollBy({ left: w * +b.dataset.dir, behavior: 'smooth' });
+  }));
+  // fareyle surukle
+  let down = false, sx = 0, sl = 0, moved = false;
+  rail.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = rail.scrollLeft; rail.classList.add('drag'); });
+  addEventListener('pointerup', () => { down = false; rail.classList.remove('drag'); });
+  rail.addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 4) moved = true; rail.scrollLeft = sl - dx; });
+  rail.addEventListener('click', e => { if (moved) { e.preventDefault(); moved = false; } }, true);
+})();
+// vitrin: ana gorseller yavas yakinlasma + capraz gecis; alttaki etiket oyunu soyler
+(() => {
+  const list = ['pixel-element-td', 'pixel-kradot-backpack', 'pixel-roll-dungeon', 'pixel-hype-puzzle'].map(NP.game);
+  const box = document.getElementById('vitrin'), ad = document.getElementById('simdi-ad'), link = document.getElementById('simdi');
+  box.innerHTML = list.map((g, i) => `<img src="${g.art}" alt="" class="${i ? '' : 'on'}" style="--c1:${g.c1}">`).join('');
+  const imgs = box.querySelectorAll('img');
+  let i = 0;
+  const show = k => {
+    imgs.forEach((im, j) => im.classList.toggle('on', j === k));
+    ad.textContent = list[k].name; link.href = `oyun.html?g=${list[k].slug}`;
+    link.classList.remove('tick'); void link.offsetWidth; link.classList.add('tick');
+  };
+  show(0);
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => show(i = (i + 1) % list.length), 5200);
+})();
 </script>
-
-<script src="assets/i18n/index.js"></script>
-<script src="assets/i18n.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/dice.js"></script>
 </body>
 </html>

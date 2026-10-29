@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Testçi ol — Noir Pixel Games</title>
+<meta name="description" content="Noir Pixel Games kapalı testlerine katıl: oyunlarımızı herkesten önce oyna, geri bildirimle şekillendir.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
+</head>
+<body data-page="test">
+<main>
+  <section class="section" style="padding-top:clamp(140px,20vh,220px)">
+    <div class="wrap">
+      <span class="label reveal">Test merkezi</span>
+      <h1 class="display reveal" style="margin:22px 0 30px;max-width:12ch">Herkesten <em>önce</em> oyna.</h1>
+      <p class="lede reveal">Kapalı testteki oyunlarımızı ilk sen dene. Tek bir test grubu bütün oyunlarımızı kapsıyor; katılmak iki dakika sürer.</p>
+      <div class="btns reveal" style="margin-top:32px"><a class="btn solid" href="https://groups.google.com/g/noirpixel-testers" target="_blank" rel="noopener">Test grubuna katıl <span class="arr">↗</span></a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head"><span class="label reveal">Nasıl</span><h2 class="h2 reveal">Üç <em>adım</em></h2></div>
+      <div class="steps">
+        <div class="step reveal"><b>Gruba katıl</b><p>Play Store’da kullandığın Google hesabıyla test grubuna katıl. Google testçiyi bu adresten tanır.</p></div>
+        <div class="step reveal" style="--d:80ms"><b>Testçi ol</b><p>Aşağıdaki oyunun test sayfasını aç, “Test kullanıcısı ol”a dokun. “Kullanılamıyor” derse biraz sonra tekrar dene.</p></div>
+        <div class="step reveal" style="--d:160ms"><b>Yükle, 14 gün tut</b><p>Her gün oynaman gerekmez; kurulu kalması yeterli. Silersen sayaç başa döner.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head"><span class="label reveal">Şu an testte</span><h2 class="h2 reveal">Açık <em>testler</em></h2></div>
+      <div id="testler"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two">
+      <div><span class="label reveal">Test sırasında</span><h2 class="h2 reveal" style="margin-top:20px">Bilmen <em>gerekenler</em></h2></div>
+      <div class="cols" style="grid-template-columns:1fr">
+        <div class="item reveal"><h3 class="h3">Geri bildirim altın değerinde</h3><p>Bir şey bozulursa ya da bir ekranda ne yapacağını anlamazsan yaz. Tek cümle yeter, ekran görüntüsü daha da iyi.</p></div>
+        <div class="item reveal"><h3 class="h3">Oyun test boyunca değişir</h3><p>Yeni modlar, görseller ve denge turları güncelleme olarak gelir; testçilere kendiliğinden iner.</p></div>
+        <div class="item reveal"><h3 class="h3">Reklamlara bilerek tıklama</h3><p>Testte reklamlar test reklamıdır; bilerek tıklamak Google tarafından geçersiz trafik sayılır. Satın almalar test modundadır, para çekilmez.</p></div>
+        <div class="item reveal"><h3 class="h3">Teste test</h3><p>Sen de aynı 12 testçi derdindeki bir geliştiriciysen bağlantını yolla; aynı gün kurar, 14 gün tutarız.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="layout.js"></script>
+<script src="i18n.js"></script>
+<script>
+document.getElementById('testler').innerHTML = NP.GAMES.filter(g => g.status === 'test').map((g, i) => `
+  <div class="dl reveal" style="--d:${i * 60}ms;padding:26px 0"><div style="display:flex;gap:20px;align-items:center">
+    <img src="${g.icon}" alt="" width="72" height="72" style="border-radius:22%">
+    <div><span class="h3">${g.name}</span><small>${g.genre}</small></div></div>
+    <div class="btns"><a class="btn solid" href="${NP.TEST(g.pkg)}" target="_blank" rel="noopener">Testçi ol <span class="arr">↗</span></a><a class="btn" href="${g.testPage}">Ayrıntılı rehber</a></div></div>`).join('');
+</script>
+</body>
+</html>

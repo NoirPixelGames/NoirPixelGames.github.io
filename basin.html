@@ -2,199 +2,83 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basın Kiti — Noir Pixel Games</title>
-<meta name="description" content="Noir Pixel Games basın kiti: künye, oyun listesi, logo ve ekran görüntüleri, iletişim.">
-<meta name="theme-color" content="#0b0910">
-<link rel="icon" href="assets/icon_64.png?v=2">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<style>
-  .facts{width:100%; border-collapse:collapse; font-size:.95rem}
-  .facts th,.facts td{text-align:left; padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-  .facts th{color:var(--muted); font-weight:500; width:34%; font-family:var(--mono); font-size:.82rem;
-            letter-spacing:.06em; text-transform:uppercase}
-  .asset{display:flex; gap:14px; align-items:center; padding:14px 0; border-bottom:1px solid var(--line)}
-  .asset img{width:64px; height:64px; object-fit:cover; border-radius:10px; border:1px solid var(--line-2)}
-  .asset .n{flex:1; min-width:0}
-  .asset .n b{display:block}
-  .asset .n span{color:var(--faint); font-family:var(--mono); font-size:.78rem}
-</style>
-<script>document.documentElement.className+=' js'</script>
-<link rel="canonical" href="https://noirpixelgames.github.io/basin.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Noir Pixel Games">
-<meta property="og:url" content="https://noirpixelgames.github.io/basin.html">
-<meta property="og:title" content="Basın Kiti — Noir Pixel Games">
-<meta property="og:description" content="Noir Pixel Games basın kiti: künye, oyun listesi, logo ve ekran görüntüleri, iletişim.">
-<meta property="og:image" content="https://noirpixelgames.github.io/assets/og_studio.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Basın kiti — Noir Pixel Games</title>
+<meta name="description" content="Noir Pixel Games basın kiti: künye, logolar, oyun görselleri ve iletişim.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
 </head>
-<body>
-<div class="atmos" aria-hidden="true"><video id="atmos" muted loop playsinline preload="none" poster="assets/video/atmos-poster.webp"></video></div>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon_64.png" alt="" width="32" height="32"><span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span></a>
-    <button class="burger" type="button" aria-label="Menü" aria-expanded="false">☰</button>
-    <nav class="menu">
-      <a href="oyunlar.html" data-i18n="nav.games">Oyunlar</a>
-      <a href="studyo.html" data-i18n="nav.studio">Stüdyo</a>
-      <a href="studyo.html#collab" data-i18n="nav.collab">İş Birliği</a>
-      <a href="basin.html" aria-current="page" data-i18n="nav.press">Basın</a>
-      <a href="index.html#contact" data-i18n="nav.contact">İletişim</a>
-      <select class="langpick" id="langpick" aria-label="Language / Dil"></select>
-    </nav>
-  </div>
-</header>
-
+<body data-page="basin">
 <main>
-  <div class="pagehead lit" style="--accent:#8a6520">
+  <section class="section" style="padding-top:clamp(140px,20vh,220px)">
     <div class="wrap">
-      <p class="crumb"><a href="./" data-i18n="crumb.home">Ana sayfa</a> / <span data-i18n="crumb.press">Basın</span></p>
-      <h1 data-i18n="page.title">Basın kiti</h1>
-      <p class="lede" style="max-width:680px" data-i18n="page.sub">Haber, inceleme veya video için ihtiyacın olan her şey. Daha fazlasını ya da yayın öncesi bir sürümü istersen tek e-posta yeterli.</p>
+      <span class="label reveal">Basın</span>
+      <h1 class="display reveal" style="margin:22px 0 30px">Basın <em>kiti</em></h1>
+      <p class="lede reveal">Haber, inceleme ya da video için ihtiyacın olan her şey. Görseller haber ve inceleme içeriklerinde serbestçe kullanılabilir. Yayın öncesi sürüm ya da röportaj için tek e-posta yeter.</p>
     </div>
-  </div>
+  </section>
 
-  <section>
-    <div class="wrap">
-      <div style="display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+  <section class="section">
+    <div class="wrap two">
+      <div><span class="label reveal">Künye</span><h2 class="h2 reveal" style="margin-top:20px">Kısaca <em>biz</em></h2>
+        <button class="btn reveal" style="margin-top:28px;background:none;cursor:pointer" id="kopyala">Künyeyi kopyala</button></div>
+      <dl class="facts reveal" id="kunye">
+        <dt>Stüdyo</dt><dd>Noir Pixel Games</dd>
+        <dt>Konum</dt><dd>Türkiye</dd>
+        <dt>Motor</dt><dd>Godot</dd>
+        <dt>Platform</dt><dd>Android (Google Play)</dd>
+        <dt>Projeler</dt><dd>10 oyun projesi — 2 ön kayıtta, 3 kapalı testte</dd>
+        <dt>İletişim</dt><dd>iletisim.noirpixel@gmail.com</dd>
+        <dt>Site</dt><dd>noirpixelgames.github.io</dd>
+      </dl>
+    </div>
+  </section>
 
-        <div class="reveal">
-          <h2 data-i18n="facts.title">Künye</h2>
-          <button class="btn ghost sm copy-facts" type="button" data-copy-facts data-i18n="facts.copy">Künyeyi kopyala</button>
-          <table class="facts">
-            <tr><th data-i18n="facts.name">Stüdyo</th><td>Noir Pixel Games</td></tr>
-            <tr><th data-i18n="facts.loc">Konum</th><td data-i18n="facts.loc.v">Türkiye</td></tr>
-            <tr><th data-i18n="facts.engine">Motor</th><td>Godot</td></tr>
-            <tr><th data-i18n="facts.platform">Platform</th><td>Android (Google Play)</td></tr>
-            <tr><th data-i18n="facts.projects">Projeler</th><td data-i18n="facts.projects.v">6 oyun projesi — 2'si ön siparişte, 1'i kapalı testte</td></tr>
-            <tr><th data-i18n="facts.contact">İletişim</th><td><a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a></td></tr>
-            <tr><th data-i18n="facts.site">Site</th><td><a href="./">noirpixelgames.github.io</a></td></tr>
-          </table>
-        </div>
-
-        <div class="reveal">
-          <h2 data-i18n="assets.title">Görseller</h2>
-          <p class="muted" style="font-size:.92rem" data-i18n="assets.sub">Üzerine sağ tıklayıp kaydedebilirsin. Haber ve inceleme içeriklerinde serbestçe kullanılabilir.</p>
-          <div class="asset">
-            <img src="assets/icon_64.png" alt="" width="32" height="32">
-            <div class="n"><b data-i18n="assets.icon">Stüdyo / oyun ikonu</b><span>icon_512.png · 512×512</span></div>
-            <a class="btn ghost sm" href="assets/icon_512.png?v=2" download data-i18n="assets.dl">İndir</a>
-          </div>
-          <div class="asset">
-            <img src="assets/feature_640.webp" alt="" width="64" height="64">
-            <div class="n"><b data-i18n="assets.feature">Pixel Roll Dungeon görseli</b><span>feature_1024x500.png · 1024×500</span></div>
-            <a class="btn ghost sm" href="assets/feature_1024x500.png" download data-i18n="assets.dl">İndir</a>
-          </div>
-          <div class="asset">
-            <img src="assets/shot_battle.jpg" alt="" width="480" height="853">
-            <div class="n"><b data-i18n="assets.shots">Oyun içi ekran görüntüleri</b><span>shot_gate · shot_battle · shot_reward</span></div>
-            <a class="btn ghost sm" href="oyun/pixel-roll-dungeon.html" data-i18n="assets.see">Gör</a>
-          </div>
-          <div class="asset">
-            <img src="assets/php_shot_quiz.jpg" alt="" width="360" height="640">
-            <div class="n"><b data-i18n="assets.php">Pixel Hype Puzzle görüntüleri</b><span>php_shot_home · quiz · survey · wheel</span></div>
-            <a class="btn ghost sm" href="oyun/pixel-hype-puzzle.html" data-i18n="assets.see">Gör</a>
-          </div>
-          <div class="asset">
-            <img src="assets/pdp_feature.webp" alt="" width="64" height="64" loading="lazy">
-            <div class="n"><b data-i18n="assets.pdp">Pixel Daily Puzzles görselleri</b><span>pdp_feature · 4 mağaza karesi</span></div>
-            <a class="btn ghost sm" href="oyun/pixel-daily-puzzles.html" data-i18n="assets.see">Gör</a>
-          </div>
-          <div class="asset">
-            <img src="assets/kradot/orc_king.webp" alt="" width="64" height="64" loading="lazy">
-            <div class="n"><b data-i18n="assets.kradot">Pixel Kradot TD karakterleri</b><span>17 karakter · şeffaf PNG</span></div>
-            <a class="btn ghost sm" href="oyun/pixel-kradot-td.html" data-i18n="assets.see">Gör</a>
-          </div>
-        </div>
-
-      </div>
-
-      <h2 class="reveal" style="margin-top:48px" data-i18n="games.title">Oyunlar</h2>
-      <div class="cards reveal">
-        <div class="card">
-          <div class="tags"><span class="tag pre" data-i18n="tag.preorder">Ön sipariş</span></div>
-          <h3>Pixel Roll Dungeon</h3>
-          <p data-i18n="p1">Zar ve poker eli üzerine kurulu dark fantasy zindan RPG'si. Kendi sunucumuz üzerinden arena ve sıralama.</p>
-        </div>
-        <div class="card">
-          <div class="tags"><span class="tag pre" data-i18n="tag.preorder">Ön sipariş</span></div>
-          <h3>Pixel Daily Puzzles</h3>
-          <p data-i18n="p2">On kadar klasik mantık bulmacası, her sabah üç yeni bölüm, tamamen çevrimdışı.</p>
-        </div>
-        <div class="card">
-          <div class="tags"><span class="tag test" data-i18n="tag.test">Kapalı test</span></div>
-          <h3>Pixel Hype Puzzle</h3>
-          <p data-i18n="p3">Tahmin, çizim ve bilgi yarışması oyunlarından oluşan parti oyunu; canlı odalar yolda.</p>
-        </div>
-        <div class="card">
-          <div class="tags"><span class="tag dev" data-i18n="tag.dev">Yapımda</span></div>
-          <h3>Pixel Kradot TD · Pixel FM</h3>
-          <p data-i18n="p4">Yapım aşamasındaki iki proje. Bir proje daha henüz duyurulmadı.</p>
-        </div>
-      </div>
-
-      <div class="contact-box reveal" style="margin-top:40px">
-        <h3 style="margin-top:0" data-i18n="cta.t">Daha fazlası mı lazım?</h3>
-        <p class="muted" data-i18n="cta.d">Yayın öncesi sürüm, ek görsel, video materyali veya röportaj için yaz — aynı gün dönüş yapıyoruz.</p>
-        <a class="btn" href="mailto:iletisim.noirpixel@gmail.com?subject=Bas%C4%B1n%20%E2%80%94%20Noir%20Pixel%20Games" data-i18n="cta.b">Basın için yaz</a>
+  <section class="section">
+    <div class="wrap two">
+      <div><span class="label reveal">Logolar</span><h2 class="h2 reveal" style="margin-top:20px">Marka <em>dosyaları</em></h2>
+        <p class="muted reveal">Logoyu orantısını bozmadan, koyu ya da açık zeminde kullan. Renk değiştirme ve efekt ekleme yok.</p></div>
+      <div class="reveal">
+        <div class="panel" style="display:grid;place-items:center;padding:56px;margin-bottom:12px"><img src="img/lockup.webp" alt="Noir Pixel Games logosu" width="360" height="120"></div>
+        <div class="dl"><div>Yatay logo (koyu zemin)<small>PNG · 2400×800</small></div><a class="btn" href="kit/lockup_h_2400x800.png" download>İndir</a></div>
+        <div class="dl"><div>Yatay logo (şeffaf)<small>PNG · 2400×800</small></div><a class="btn" href="kit/lockup_h_transparent_2400x800.png" download>İndir</a></div>
+        <div class="dl"><div>Dikey logo<small>PNG · 1600×1600</small></div><a class="btn" href="kit/lockup_v_1600x1600.png" download>İndir</a></div>
+        <div class="dl"><div>Stüdyo ikonu<small>PNG · 512×512</small></div><a class="btn" href="kit/icon_512.png" download>İndir</a></div>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head"><span class="label reveal">Oyunlar</span><h2 class="h2 reveal">Oyun <em>görselleri</em></h2></div>
+      <div id="oyungorsel"></div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <div class="wrap" style="display:grid;gap:26px;justify-items:center">
+      <h2 class="display reveal" style="font-size:clamp(44px,6.5vw,100px)">Daha fazlası mı <em>lazım?</em></h2>
+      <p class="lede reveal">Yayın öncesi sürüm, ek görsel, video materyali ya da röportaj — aynı gün dönüş yapıyoruz.</p>
+      <a class="btn solid reveal" href="mailto:iletisim.noirpixel@gmail.com?subject=Basın">Basın için yaz <span class="arr">→</span></a>
+    </div>
+  </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="./" style="margin-bottom:12px">
-          <img src="assets/icon_64.png" alt="" width="64" height="64" style="width:32px;height:32px">
-          <span>NOIR&nbsp;PIXEL&nbsp;<b>GAMES</b></span>
-        </a>
-        <p class="muted" style="font-size:.9rem;max-width:30ch" data-i18n="foot.blurb">Bağımsız oyun stüdyosu. Telefona sığan, tam boy oyunlar.</p>
-      </div>
-      <div>
-        <h4 data-i18n="foot.games">Oyunlar</h4>
-        <ul>
-          <li><a href="oyun/pixel-roll-dungeon.html">Pixel Roll Dungeon</a></li>
-          <li><a href="oyun/pixel-daily-puzzles.html">Pixel Daily Puzzles</a></li>
-          <li><a href="oyun/pixel-hype-puzzle.html">Pixel Hype Puzzle</a></li>
-          <li><a href="oyunlar.html" data-i18n="foot.allgames">Tüm oyunlar</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.studio">Stüdyo</h4>
-        <ul>
-          <li><a href="studyo.html" data-i18n="foot.about">Biz kimiz</a></li>
-          <li><a href="studyo.html#collab" data-i18n="foot.collab">İş birliği</a></li>
-          <li><a href="basin.html" data-i18n="foot.press">Basın kiti</a></li>
-          <li><a href="https://groups.google.com/g/noirpixel-testers" data-i18n="social.testers">Testçi grubu</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="foot.legal">Hukuki</h4>
-        <ul>
-          <li><a href="legal.html" data-i18n="foot.alllegal">Tüm belgeler</a></li>
-          <li><a href="privacy-policy.html" data-i18n="foot.privacy">Gizlilik politikası</a></li>
-          <li><a href="terms-of-service.html" data-i18n="foot.terms">Kullanım koşulları</a></li>
-          <li><a href="delete-data.html" data-i18n="foot.delete">Verilerimi sil</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span data-year>2026</span> Noir Pixel Games</span>
-      <span><a href="mailto:iletisim.noirpixel@gmail.com">iletisim.noirpixel@gmail.com</a></span>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/i18n/basin.js"></script>
-<script src="assets/i18n.js"></script>
-<script src="assets/site.js"></script>
+<script src="data.js"></script>
+<script src="layout.js"></script>
+<script src="i18n.js"></script>
+<script>
+document.getElementById('oyungorsel').innerHTML = NP.GAMES.filter(g => g.art).map(g => `
+  <div class="dl reveal"><div style="display:flex;gap:18px;align-items:center">
+    ${g.icon ? `<img src="${g.icon}" alt="" width="56" height="56" style="border-radius:22%">` : ''}
+    <div>${g.name}<small>${NP.STATUS[g.status].label} · ${g.genre}</small></div></div>
+    <div class="btns"><a class="btn" href="${g.art}" download>Ana görsel</a>${g.icon ? `<a class="btn" href="${g.icon}" download>İkon</a>` : ''}<a class="btn" href="oyun.html?g=${g.slug}">Sayfa →</a></div></div>`).join('');
+document.getElementById('kopyala').addEventListener('click', e => {
+  const t = [...document.querySelectorAll('#kunye dt')].map(dt => `${dt.textContent}: ${dt.nextElementSibling.textContent}`).join('\n');
+  navigator.clipboard.writeText(t).then(() => { e.target.textContent = 'Kopyalandı ✓'; setTimeout(() => e.target.textContent = 'Künyeyi kopyala', 1800); });
+});
+</script>
 </body>
 </html>
