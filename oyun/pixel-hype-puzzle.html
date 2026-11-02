@@ -31,7 +31,9 @@
 
   const icon = g.icon ? `<img class="ico" src="${g.icon}" alt="" style="view-transition-name:icon-${g.slug}">`
     : `<span class="g-mono" style="view-transition-name:icon-${g.slug}">${g.mono}</span>`;
-  const cta = g.status === 'live'
+  const cta = g.status === 'out'
+    ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de indir <span class="arr">↗</span></a>`
+    : g.status === 'live'
     ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de ön kayıt <span class="arr">↗</span></a><a class="btn" href="${U('test.html')}">Testçi ol</a>`
     : g.status === 'test'
     ? `<a class="btn solid" href="${g.testPage || U('test.html')}">Testçi ol <span class="arr">→</span></a><a class="btn" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play ↗</a>`

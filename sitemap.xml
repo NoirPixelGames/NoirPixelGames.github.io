@@ -9,13 +9,13 @@
   <url><loc>https://noirpixelgames.github.io/test-merkezi.html</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://noirpixelgames.github.io/iletisim.html</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-roll-dungeon.html</loc><lastmod>2026-10-30</lastmod><priority>0.9</priority></url>
-  <url><loc>https://noirpixelgames.github.io/oyun/pixel-daily-puzzles.html</loc><lastmod>2026-10-30</lastmod><priority>0.9</priority></url>
+  <url><loc>https://noirpixelgames.github.io/oyun/pixel-daily-puzzles.html</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-hype-puzzle.html</loc><lastmod>2026-10-30</lastmod><priority>0.9</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-kradot-backpack.html</loc><lastmod>2026-10-30</lastmod><priority>0.9</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-element-td.html</loc><lastmod>2026-10-30</lastmod><priority>0.9</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-kradot-td.html</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
   <url><loc>https://noirpixelgames.github.io/oyun/pixel-fm.html</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
-  <url><loc>https://noirpixelgames.github.io/oyun/pixel-doomsday.html</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
+  <url><loc>https://noirpixelgames.github.io/oyun/pixel-doomsday.html</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://noirpixelgames.github.io/test.html</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://noirpixelgames.github.io/pixel-daily-puzzles/test.html</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://noirpixelgames.github.io/pixel-hype-puzzle/test.html</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
@@ -34,4 +34,8 @@
   <url><loc>https://noirpixelgames.github.io/pixel-kradot-backpack/privacy-policy.html</loc><lastmod>2026-10-30</lastmod><priority>0.2</priority></url>
   <url><loc>https://noirpixelgames.github.io/pixel-kradot-backpack/terms-of-service.html</loc><lastmod>2026-10-30</lastmod><priority>0.2</priority></url>
   <url><loc>https://noirpixelgames.github.io/pixel-kradot-backpack/delete-data.html</loc><lastmod>2026-10-30</lastmod><priority>0.2</priority></url>
+  <url><loc>https://noirpixelgames.github.io/pixel-doomsday-shelter/test.html</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://noirpixelgames.github.io/pixel-doomsday-shelter/privacy-policy.html</loc><lastmod>2026-11-02</lastmod><priority>0.2</priority></url>
+  <url><loc>https://noirpixelgames.github.io/pixel-doomsday-shelter/terms-of-service.html</loc><lastmod>2026-11-02</lastmod><priority>0.2</priority></url>
+  <url><loc>https://noirpixelgames.github.io/pixel-doomsday-shelter/delete-data.html</loc><lastmod>2026-11-02</lastmod><priority>0.2</priority></url>
 </urlset>

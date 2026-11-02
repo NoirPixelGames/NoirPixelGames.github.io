@@ -194,7 +194,7 @@ a.gcard:hover .g-glow { opacity: .75; }
 .gcard.dev { opacity: .92; }
 
 .st { justify-self: start; font: 600 10px/1 var(--label); letter-spacing: .2em; text-transform: uppercase; padding: 7px 10px; border-radius: 999px; border: 1px solid currentColor; }
-.st-live { color: #9fe3b0; } .st-test { color: var(--gold); } .st-dev { color: var(--ink-2); } .st-secret { color: var(--ink-3); }
+.st-out { color: #7fd8ff; } .st-live { color: #9fe3b0; } .st-test { color: var(--gold); } .st-dev { color: var(--ink-2); } .st-secret { color: var(--ink-3); }
 
 /* one cikan ray */
 .rail { display: grid; grid-auto-flow: column; grid-auto-columns: min(78vw, 980px); gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;
