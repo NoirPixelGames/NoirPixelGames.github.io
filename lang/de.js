@@ -7,7 +7,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['de'] = {
 23:"Im Fokus",24:"Jetzt auf der <em>Bühne</em>",25:"Vorregistrierung offen",
 26:"Ein Dark-Fantasy-Dungeon-RPG aus Würfeln und Pokerhänden. Jeder Wurf eine Entscheidung, jede Hand eine Strategie.",27:"Zum Spiel →",
 28:"Rund zehn klassische Logikrätsel, jeden Morgen drei neue Level. Komplett offline — keine Uhr, keine Eile.",
-29:"Errate, was alle anderen gesagt haben, zeichne gegen die Zeit, rase durch Quizrunden. Live-Räume sind unterwegs.",
+29:"Quiz-, Wort- und Zeichenspiele, alle endlos, alle live. Sieh, wer online ist, geh in einen Saal, schlag deinen Gegner.",
 30:"Ein Rucksackkampf im Kradot-Universum. Pack deinen Rucksack, verschmelze Gegenstände und lass deinen Helden selbst kämpfen.",
 31:"Feuer, Eis, Erde und Blitz. Säume den Pass mit Türmen der vier Elemente und halte die Horde Welle um Welle auf.",
 32:"01 — Spiele",33:"Welten im <em>Regal</em>",34:"Alle Spiele <span class=\"arr\">→</span>",

@@ -7,7 +7,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['pt-BR'] = {
 23:"Destaques",24:"Agora <em>em cena</em>",25:"Pré-registro aberto",
 26:"Um RPG de masmorra de fantasia sombria baseado em dados e mãos de pôquer. Cada rolagem é uma decisão, cada mão uma estratégia.",27:"Ver o jogo →",
 28:"Cerca de dez quebra-cabeças lógicos clássicos, três fases novas toda manhã. Totalmente offline — sem relógio, sem pressa.",
-29:"Adivinhe o que todo mundo disse, desenhe contra o relógio, dispute rodadas de perguntas. As salas ao vivo estão a caminho.",
+29:"Jogos de perguntas, palavras e desenho, todos sem limite e ao vivo. Veja quem está on, entre em um salão, vença seu rival.",
 30:"Uma batalha de mochilas no universo Kradot. Arrume a mochila, funda itens e deixe seu herói lutar sozinho.",
 31:"Fogo, gelo, terra e raio. Encha a passagem com torres dos quatro elementos e pare a horda, onda após onda.",
 32:"01 — Jogos",33:"Mundos na <em>prateleira</em>",34:"Todos os jogos <span class=\"arr\">→</span>",

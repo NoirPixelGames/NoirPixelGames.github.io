@@ -7,7 +7,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['id'] = {
 23:"Unggulan",24:"Sedang <em>di panggung</em>",25:"Pra-registrasi dibuka",
 26:"RPG dungeon dark fantasy yang dibangun di atas dadu dan kombinasi poker. Setiap lemparan adalah keputusan, setiap kombinasi adalah strategi.",27:"Lihat game →",
 28:"Sekitar sepuluh teka-teki logika klasik, tiga level baru setiap pagi. Sepenuhnya offline — tanpa pengatur waktu, tanpa terburu-buru.",
-29:"Tebak jawaban orang lain, menggambar melawan waktu, adu cepat di kuis. Ruang langsung segera hadir.",
+29:"Game kuis, kata, dan menggambar, semuanya tanpa batas dan langsung. Lihat siapa yang online, masuk aula, kalahkan lawanmu.",
 30:"Pertarungan ransel di semesta Kradot. Susun ranselmu, gabungkan item, dan biarkan pahlawanmu bertarung sendiri.",
 31:"Api, es, tanah, dan petir. Pasang menara empat elemen di sepanjang celah dan hentikan gerombolan gelombang demi gelombang.",
 32:"01 — Game",33:"Dunia di <em>rak</em>",34:"Semua game <span class=\"arr\">→</span>",

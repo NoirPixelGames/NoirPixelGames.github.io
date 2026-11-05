@@ -36,7 +36,7 @@ NP.GAMES = [
   { slug: 'pixel-hype-puzzle', name: 'Pixel Hype Puzzle', genre: 'Parti & bilgi oyunları', status: 'test', pkg: 'com.noirpixel.pixelhypepuzzle', testPage: 'pixel-hype-puzzle/test.html',
     c1: '#ffd23d', c2: '#1a1406', icon: 'img/icon_php_brand.webp', art: 'assets/php_feature.webp',
     shots: ['home', 'survey', 'quiz', 'wheel'].map(n => `../assets/php_shot_${n}.jpg`),
-    lede: 'Herkesin ne dediğini tahmin et, bir dakikada çiz, bilgi turlarında yarış. Canlı odalar yolda.',
+    lede: 'Bilgi, kelime ve çizim oyunları; hepsi sınırsız, hepsi canlı. Kim çevrimiçi gör, salona gir, rakibini yen.',
     features: [['Popüler Cevap', 'Doğruyu değil, çoğunluğun ne diyeceğini bul.'],
       ['Çiz Puanla', 'Herkese aynı konu, bir dakika süre; kazananlar ertesi sabah.'],
       ['Canlı odalar', '1v1 eşleşme ya da 6 harfli kodla arkadaşlarınla oda.']],

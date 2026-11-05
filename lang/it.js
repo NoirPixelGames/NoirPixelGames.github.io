@@ -7,7 +7,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['it'] = {
 23:"In evidenza",24:"Ora <em>in scena</em>",25:"Preregistrazione aperta",
 26:"Un RPG dungeon dark fantasy basato su dadi e mani di poker. Ogni lancio è una decisione, ogni mano una strategia.",27:"Vedi il gioco →",
 28:"Una decina di puzzle logici classici, tre nuovi livelli ogni mattina. Completamente offline: niente timer, niente fretta.",
-29:"Indovina cosa hanno risposto gli altri, disegna contro il tempo, sfida tutti nei quiz. Le stanze dal vivo stanno arrivando.",
+29:"Quiz, giochi di parole e di disegno, tutti infiniti, tutti dal vivo. Guarda chi è online, entra in una sala, batti il tuo rivale.",
 30:"Una battaglia di zaini nell’universo di Kradot. Riempi lo zaino, fondi gli oggetti e lascia che il tuo eroe combatta da solo.",
 31:"Fuoco, ghiaccio, terra e fulmine. Schiera torri dei quattro elementi lungo il passo e ferma l’orda ondata dopo ondata.",
 32:"01 — Giochi",33:"Mondi sullo <em>scaffale</em>",34:"Tutti i giochi <span class=\"arr\">→</span>",

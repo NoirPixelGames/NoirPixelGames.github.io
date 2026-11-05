@@ -7,7 +7,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['pl'] = {
 23:"Polecane",24:"Teraz <em>na scenie</em>",25:"Rejestracja wstępna otwarta",
 26:"Mroczne fantasy RPG w lochach oparte na kościach i układach pokerowych. Każdy rzut to decyzja, każdy układ to strategia.",27:"Zobacz grę →",
 28:"Około dziesięciu klasycznych łamigłówek logicznych, trzy nowe poziomy każdego ranka. W pełni offline — bez zegara, bez pośpiechu.",
-29:"Zgadnij, co powiedzieli inni, rysuj na czas, ścigaj się w quizach. Pokoje na żywo są w drodze.",
+29:"Quizy, gry słowne i rysunkowe, wszystkie bez limitu i na żywo. Zobacz, kto jest online, wejdź do sali, pokonaj rywala.",
 30:"Bitwa plecaków w uniwersum Kradot. Spakuj plecak, łącz przedmioty i pozwól bohaterowi walczyć samemu.",
 31:"Ogień, lód, ziemia i błyskawica. Ustaw na przełęczy wieże czterech żywiołów i zatrzymaj hordę fala za falą.",
 32:"01 — Gry",33:"Światy na <em>półce</em>",34:"Wszystkie gry <span class=\"arr\">→</span>",

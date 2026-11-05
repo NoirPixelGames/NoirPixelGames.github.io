@@ -30,6 +30,7 @@
 <h2>1. İşlenen veriler</h2>
 <table>
 <tr><th>Veri</th><th>Kaynak</th><th>Amaç</th></tr>
+<tr><td>Çevrimiçi durum (takma adınız, avatarınız, oynadığınız oyun ve ne yaptığınız, son görülme zamanı)</td><td>Uygulama → sunucumuz (Google Firebase)</td><td>Online ekranında kimin ne oynadığını diğer oyunculara göstermek. Ayarlar'dan "Beni çevrimiçi listesinde göster" kapatılırsa kayıt silinir ve yazılmaz.</td></tr>
 <tr><td>Oyun ilerlemesi (biten bölümler, süreler, seri, XP, ayarlar)</td><td>Uygulamanın kendisi</td><td>Yalnızca cihazınızda saklanır. Bulut kaydını açarsanız Google hesabınızla ilişkili olarak Google Play Games'te de tutulur (aşağıda).</td></tr>
 <tr><td>Anket cevapları ("Günün anketi" kartına yazdığınız kısa cevaplar) ve anonim kimlik</td><td>Uygulama → sunucumuz (Google Firebase)</td><td>"Popüler Cevap" oyununun bölümlerini oyuncuların toplu cevaplarından üretmek. Cevaplar toplanır, sayılır ve yalnızca yüzde olarak gösterilir; tek tek cevaplar hiçbir oyuncuya gösterilmez. Lütfen cevaplara kişisel bilgi yazmayın.</td></tr>
 <tr><td>Çizimleriniz ("Çiz Puanla" modu: vektör darbeleri), verdiğiniz puanlar, şikayetler, engellemeler ve anonim kimlik</td><td>Uygulama → sunucumuz (Google Firebase)</td><td>Çizimleri diğer oyunculara puanlatmak, günün kazananlarını hesaplamak, uygunsuz içeriği kaldırmak. Çizimler <b>herkese açık içeriktir</b>: aynı gün çizen diğer oyuncular ve kazananlar listesi görebilir. Takma ad olarak "Çizer #1234" gibi anonim bir etiket kullanılır (Play Games'e giriş yaparsanız oradaki takma adınız).</td></tr>
@@ -74,6 +75,7 @@
 <h2>1. Data we process</h2>
 <table>
 <tr><th>Data</th><th>Source</th><th>Purpose</th></tr>
+<tr><td>Online status (your nickname, avatar, the game you are playing and what you are doing, when you were last seen)</td><td>The App → our server (Google Firebase)</td><td>Showing other players who is playing what on the Online screen. Turning off "Show me in the online list" in Settings deletes the record and stops writing it.</td></tr>
 <tr><td>Game progress (finished levels, times, streak, XP, settings)</td><td>The App itself</td><td>Stored only on your device. If you enable cloud save it is also kept in Google Play Games, tied to your Google account (see below).</td></tr>
 <tr><td>Survey answers (the short answers you type into the "Survey of the day" card) and the anonymous ID</td><td>The App → our server (Google Firebase)</td><td>Building the "Top Answers" game levels from players' combined answers. Answers are aggregated, counted and shown only as percentages; no individual answer is ever shown to another player. Please do not put personal information in an answer.</td></tr>
 <tr><td>Your drawings ("Draw &amp; Rate" mode: vector strokes), the ratings you give, reports, blocks and the anonymous ID</td><td>The App → our server (Google Firebase)</td><td>Letting other players rate the drawings, computing the day's winners and removing inappropriate content. Drawings are <b>public content</b>: other players who drew that day and the winners list can see them. An anonymous tag such as "Artist #1234" is shown as the name (your Play Games nickname if you sign in).</td></tr>
