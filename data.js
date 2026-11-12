@@ -60,7 +60,7 @@ NP.GAMES = [
     lede: 'Kradot evreninde şeridini kur, ekonomini büyüt, rakibine akın gönder.' },
   { slug: 'pixel-fm', name: 'Pixel FM', genre: 'Futbol menajerliği', status: 'dev', mono: 'FM', c1: '#3ddc84', c2: '#07140d',
     lede: 'Kadronu kur, taktiğini seç, sezonu yönet.' },
-  { slug: 'pixel-doomsday', name: 'Pixel Doomsday Shelter', genre: 'Hayatta kalma', status: 'test', pkg: 'com.noirpixel.doomsdayshelter', testPage: 'pixel-doomsday-shelter/test.html',
+  { slug: 'pixel-doomsday', name: 'Doomsday Shelter', genre: 'Hayatta kalma', status: 'test', pkg: 'com.noirpixel.doomsdayshelter', testPage: 'pixel-doomsday-shelter/test.html',
     c1: '#ff4a3d', c2: '#0a0c18', icon: 'img/icon_dds.png', art: 'img/dds_feature.jpg',
     lede: 'Sirenler çaldı! 60 saniyede aileni ve erzakını topla, sığınakta hayatta kal.',
     features: [['60 saniye', 'Sirenler çalarken evden kimi ve neyi alacağını sen seç.'],
