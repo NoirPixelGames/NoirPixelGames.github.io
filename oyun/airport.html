@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Airport — Noir Pixel Games</title>
+<meta name="description" content="Havalimanında gümrük memurusun. Pasaportu, valizi ve anlatılan hikâyeyi kontrol et; kimin geçeceğine sen karar ver.">
+<link rel="canonical" href="https://noirpixelgames.github.io/oyun/airport.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Noir Pixel Games"><meta property="og:url" content="https://noirpixelgames.github.io/oyun/airport.html">
+<meta property="og:title" content="Airport"><meta property="og:description" content="Havalimanında gümrük memurusun. Pasaportu, valizi ve anlatılan hikâyeyi kontrol et; kimin geçeceğine sen karar ver."><meta property="og:image" content="https://noirpixelgames.github.io/kit/og_1200x630.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1c1d21">
+<link rel="icon" href="../kit/favicon_32.png"><link rel="apple-touch-icon" href="../kit/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../v2.css">
+</head>
+<body data-page="oyunlar" data-slug="airport">
+<main id="app"></main>
+<script src="../data.js"></script>
+<script src="../layout.js"></script>
+<script src="../i18n.js"></script>
+<script>
+(() => {
+  // oyun/<slug>.html kopyalari slug'i body'de tasir; oyun.html ?g= ile calisir
+  const g = NP.game(document.body.dataset.slug || new URLSearchParams(location.search).get('g')) || NP.GAMES[0];
+  const U = NP.url;
+  const st = NP.STATUS[g.status];
+  document.title = `${g.name} — Noir Pixel Games`;
+  document.querySelector('meta[name=description]').content = g.lede || g.genre;
+  document.body.style.cssText = `--c1:${g.c1};--c2:${g.c2}`;
+
+  const icon = g.icon ? `<img class="ico" src="${g.icon}" alt="" style="view-transition-name:icon-${g.slug}">`
+    : `<span class="g-mono" style="view-transition-name:icon-${g.slug}">${g.mono}</span>`;
+  const cta = g.status === 'out'
+    ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de indir <span class="arr">↗</span></a>`
+    : g.status === 'live'
+    ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de ön kayıt <span class="arr">↗</span></a>${g.test ? `<a class="btn" href="${g.testPage || U('test-merkezi.html')}">Kapalı teste katıl</a>` : ''}`
+    : g.status === 'test'
+    ? `<a class="btn solid" href="${g.testPage || U('test-merkezi.html')}">Testçi ol <span class="arr">→</span></a><a class="btn" href="${U('test-merkezi.html')}">Test merkezi</a>`
+    : `<a class="btn solid" href="${NP.GROUP}" target="_blank" rel="noopener">Haberdar ol <span class="arr">↗</span></a>`;
+  const steps = g.status === 'live'
+    ? [['Play sayfasını aç', 'Google Play’de oyunun sayfasına git.'], ['“Ön kayıt”a dokun', 'Çıkış günü otomatik yüklenir.'], ['Ödülünü al', 'Ön kayıt ödülü ilk açılışta seni bekler.']]
+    : g.status === 'test'
+    ? [['Gruba katıl', 'Play Store’da kullandığın Google hesabıyla test grubuna katıl.'], ['Testçi ol', 'Test sayfasında “Test kullanıcısı ol”a dokun.'], ['14 gün yüklü tut', 'Geri bildirimin oyunu şekillendirir.']]
+    : null;
+
+  const i = NP.GAMES.indexOf(g), next = NP.GAMES.slice(i + 1).concat(NP.GAMES).find(x => x.status !== 'secret' && x !== g);
+
+  document.getElementById('app').innerHTML = `
+  <section class="g-hero">
+    ${g.art ? `<div class="art" aria-hidden="true"><img src="${g.art}" alt=""></div>` : ''}
+    <div class="wrap">
+      <span class="reveal">${icon}</span>
+      <div class="reveal" style="--d:60ms;display:flex;gap:14px;align-items:center;flex-wrap:wrap">${NP.chips(g)}<span class="label" style="--gold:${g.c1}">${g.genre}</span></div>
+      <h1 class="display reveal" style="--d:120ms">${g.name}</h1>
+      <p class="lede reveal" style="--d:180ms;color:rgba(241,242,246,.82)">${g.lede || ''}</p>
+      <div class="btns reveal" style="--d:240ms">${cta}</div>
+    </div>
+  </section>
+
+  ${g.features ? `<section class="section"><div class="wrap">
+    <div class="head"><span class="label reveal">Oyun</span><h2 class="h2 reveal">Oyunun <em>öne çıkanları</em></h2></div>
+    <div class="cols">${g.features.map((f, k) => `<div class="item reveal" style="--d:${k * 80}ms"><span class="num">0${k + 1}</span><h3 class="h3">${f[0]}</h3><p>${f[1]}</p></div>`).join('')}</div>
+    ${g.facts ? `<div class="chips reveal" style="margin-top:48px">${g.facts.map(f => `<span>${f}</span>`).join('')}</div>` : ''}
+  </div></section>` : ''}
+
+  ${g.shots ? `<section class="section"><div class="wrap">
+    <div class="head"><span class="label reveal">Ekran görüntüleri</span><h2 class="h2 reveal">Oyundan <em>kareler</em></h2></div>
+    <div class="shots reveal">${g.shots.map(s => `<img src="${s}" alt="${g.name} ekran görüntüsü" loading="lazy">`).join('')}</div>
+  </div></section>` : ''}
+
+  ${steps ? `<section class="section"><div class="wrap">
+    <div class="head split"><div><span class="label reveal">${g.status === 'live' ? 'Ön kayıt' : 'Kapalı test'}</span><h2 class="h2 reveal" style="margin-top:20px">${g.status === 'live' ? 'Çıkışta <em>ilk</em> sen oyna' : 'Herkesten <em>önce</em> oyna'}</h2></div></div>
+    <div class="steps">${steps.map((s, k) => `<div class="step reveal" style="--d:${k * 80}ms"><b>${s[0]}</b><p>${s[1]}</p></div>`).join('')}</div>
+    <div class="btns reveal" style="margin-top:36px">${cta}</div>
+  </div></section>` : ''}
+
+  ${next ? `<section class="section"><div class="wrap next">
+    <a class="link" href="${U('oyunlar.html')}">← Tüm oyunlar</a>
+    <a href="${next.page}" style="text-align:right"><span class="label">Sıradaki</span><div class="h3" style="margin-top:10px">${next.name} →</div></a>
+  </div></section>` : ''}`;
+
+  NP.reveal();
+  const art = document.querySelector('.g-hero .art img');
+  if (art) addEventListener('scroll', () => { art.style.transform = `translateY(${scrollY * .22}px)`; }, { passive: true });
+})();
+</script>
+</body>
+</html>

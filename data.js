@@ -69,6 +69,10 @@ NP.GAMES = [
     facts: ['Hayatta kalma', 'Tek oyunculu', 'Çevrimdışı', '8 dil'] },
   { slug: 'mars-sweepers', name: 'Mars Sweepers', genre: 'Mars’ta hayatta kalma', status: 'dev', mono: 'MS', c1: '#ff7a3d', c2: '#170a06',
     lede: 'Kızıl tozu süpür, Hab’ını kur, patatesini yetiştir. Mars’ı adım adım yaşanır bir yere çevir.' },
+  { slug: 'ludus', name: 'Ludus', genre: 'Gladyatör okulu yönetimi', status: 'dev', mono: 'LU', c1: '#d4a04a', c2: '#160e07',
+    lede: 'Bir gladyatör okulunun başındasın. Savaşçılarını seç, eğit, arenaya çıkar; kalabalığı ve hamilerini memnun tut.' },
+  { slug: 'airport', name: 'Airport', genre: 'Gümrük memuru · çalışma adı', status: 'dev', mono: 'AP', c1: '#4fb7d4', c2: '#07131a',
+    lede: 'Havalimanında gümrük memurusun. Pasaportu, valizi ve anlatılan hikâyeyi kontrol et; kimin geçeceğine sen karar ver.' },
   { slug: 'gizli-1', name: 'Duyurulmamış proje', genre: 'Taşlar diziliyor', status: 'secret', mono: '?', c1: '#ff8a1f', c2: '#14120d' },];
 
 NP.GAMES.forEach(g => {
