@@ -23,10 +23,23 @@ privacy-policy.html     ⚠ Play Console'a kayıtlı adresler — ASLA taşıma/
 terms-of-service.html   ⚠
 delete-data.html        ⚠
 test.html               ⚠ testçi davet sayfası, duyurularda paylaşıldı
-pixel-daily-puzzles/    ⚠ aynısı Pixel Daily Puzzles için
-pixel-hype-puzzle/      ⚠ aynısı Pixel Hype Puzzle için
+pixel-daily-puzzles/    ⚠ aynısı Daily Logic Puzzles için
+pixel-hype-puzzle/      ⚠ aynısı Hype Puzzle için
 app-ads.txt             ⚠ AdMob doğrulaması — kökte kalmalı
 ```
+
+## Oyun durumu ve adlar
+
+Tek kaynak `data.js` (`NP.GAMES`). `status`: `out` yayında · `live` ön kayıt · `test` kapalı test · `dev` yapımda · `secret`.
+Ön kayıttaki oyun aynı anda kapalı testteyse `test: true` + `testPage` verilir; kartlar, filtre, test merkezi ve
+sayaçlar (`data-count`, `data-counts`) bunu kendiliğinden gösterir — sayfalara elle sayı yazılmaz.
+Oyun adlarında "Pixel" yok (13 Kasım 2026 kararı). `slug` ve klasör adları (`pixel-…`) Play'e kayıtlı olduğu için değişmez.
+
+## Renk
+
+Üç renk (Hype ile ortak, sahip 8 Kasım): kömür `#1C1D21` zemin, mandalina `#FF8A1F` ana eylem/vurgu,
+kraliyet mavisi `#2F5BEA` (metinde `#7D98FF`) ikincil işaretler. Token'lar `v2.css` `:root` içinde; sayfada ham renk yazılmaz.
+Oyunların kendi `c1/c2` renkleri yalnız kart parıltısında ve oyun sayfasının zemininde kalır.
 
 ## Alan adını değiştirmek
 
@@ -65,7 +78,7 @@ npx serve .
 ## Yapılacaklar
 
 - [ ] 6. oyunun adı ve tanıtımı (şu an "duyurulmadı" kartı)
-- [ ] Pixel FM ve Pixel Kradot TD için açıklama + görsel
+- [ ] FM ve Kradot TD için açıklama + görsel
 - [ ] Sosyal medya adresleri (`index.html` içinde yorum satırında hazır bekliyor)
 - [ ] Play geliştirici sayfası linki (şu an arama linki kullanılıyor)
 - [ ] Eksik görseller: `pdp_feature_1024x500.png`, `pdp_shot_1..3.jpg`, `php_feature_1024x500.png`

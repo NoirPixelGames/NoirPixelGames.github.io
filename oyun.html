@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Oyun — Noir Pixel Games</title>
 <meta name="description" content="Noir Pixel Games oyunu: özellikler, ekran görüntüleri, ön kayıt ve kapalı test.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="#1c1d21">
 <link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -31,9 +31,9 @@
   const cta = g.status === 'out'
     ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de indir <span class="arr">↗</span></a>`
     : g.status === 'live'
-    ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de ön kayıt <span class="arr">↗</span></a><a class="btn" href="${U('test-merkezi.html')}">Testçi ol</a>`
+    ? `<a class="btn solid" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play’de ön kayıt <span class="arr">↗</span></a>${g.test ? `<a class="btn" href="${g.testPage || U('test-merkezi.html')}">Kapalı teste katıl</a>` : ''}`
     : g.status === 'test'
-    ? `<a class="btn solid" href="${g.testPage || U('test-merkezi.html')}">Testçi ol <span class="arr">→</span></a><a class="btn" href="${NP.PLAY(g.pkg)}" target="_blank" rel="noopener">Google Play ↗</a>`
+    ? `<a class="btn solid" href="${g.testPage || U('test-merkezi.html')}">Testçi ol <span class="arr">→</span></a><a class="btn" href="${U('test-merkezi.html')}">Test merkezi</a>`
     : `<a class="btn solid" href="${NP.GROUP}" target="_blank" rel="noopener">Haberdar ol <span class="arr">↗</span></a>`;
   const steps = g.status === 'live'
     ? [['Play sayfasını aç', 'Google Play’de oyunun sayfasına git.'], ['“Ön kayıt”a dokun', 'Çıkış günü otomatik yüklenir.'], ['Ödülünü al', 'Ön kayıt ödülü ilk açılışta seni bekler.']]
@@ -48,9 +48,9 @@
     ${g.art ? `<div class="art" aria-hidden="true"><img src="${g.art}" alt=""></div>` : ''}
     <div class="wrap">
       <span class="reveal">${icon}</span>
-      <div class="reveal" style="--d:60ms;display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span class="st ${st.cls}">${st.label}</span><span class="label" style="--gold:${g.c1}">${g.genre}</span></div>
+      <div class="reveal" style="--d:60ms;display:flex;gap:14px;align-items:center;flex-wrap:wrap">${NP.chips(g)}<span class="label" style="--gold:${g.c1}">${g.genre}</span></div>
       <h1 class="display reveal" style="--d:120ms">${g.name}</h1>
-      <p class="lede reveal" style="--d:180ms;color:rgba(244,241,234,.82)">${g.lede || ''}</p>
+      <p class="lede reveal" style="--d:180ms;color:rgba(241,242,246,.82)">${g.lede || ''}</p>
       <div class="btns reveal" style="--d:240ms">${cta}</div>
     </div>
   </section>

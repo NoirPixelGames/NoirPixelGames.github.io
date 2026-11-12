@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Oyunlar — Noir Pixel Games</title>
 <meta name="description" content="Noir Pixel Games oyunları: ön kayıttaki, kapalı testteki ve yapımdaki tüm projeler.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="#1c1d21">
 <link rel="icon" href="kit/favicon_32.png"><link rel="apple-touch-icon" href="kit/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
 <script src="i18n.js"></script>
 <script>
 const k = document.getElementById('katalog');
-const draw = f => { k.innerHTML = NP.GAMES.filter(g => f === 'all' || g.status === f || (f === 'dev' && g.status === 'secret')).map(NP.card).join(''); NP.reveal(); };
+const draw = f => { k.innerHTML = NP.GAMES.filter(g => f === 'all' || g.status === f || (f === 'test' && g.test) || (f === 'dev' && g.status === 'secret')).map(NP.card).join(''); NP.reveal(); };
 document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
   const run = () => draw(b.dataset.f);
