@@ -41,7 +41,7 @@ NP.GAMES = [
       ['Çiz Puanla', 'Herkese aynı konu, bir dakika süre; kazananlar ertesi sabah.'],
       ['Canlı odalar', '1v1 eşleşme ya da 6 harfli kodla arkadaşlarınla oda.']],
     facts: ['Parti', 'Bilgi yarışması', '4 dil'] },
-  { slug: 'pixel-kradot-backpack', name: 'Kradot Backpack', genre: 'Çanta auto-battler', status: 'test', pkg: 'com.noirpixel.kradotbackpack', testPage: 'pixel-kradot-backpack/test.html',
+  { slug: 'pixel-kradot-backpack', name: 'Kradot Backpack Battler', genre: 'Çanta auto-battler', status: 'test', pkg: 'com.noirpixel.kradotbackpack', testPage: 'pixel-kradot-backpack/test.html',
     c1: '#e0a64a', c2: '#150f08', icon: 'img/icon_bp.webp', art: 'assets/backpack/feature.webp',
     shots: ['01_tooltip', '02_prep', '03_combat', '05_heroes', '06_forge', '08_codex'].map(f => `img/bp_${f}.webp`),
     lede: 'Kradot evreninde bir çanta savaşı. Çantanı diz, eşyaları birleştir, kahramanın kendi başına savaşsın.',

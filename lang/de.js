@@ -111,7 +111,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['de'] = {
 323:"Live-Räume",324:"1-gegen-1-Matchmaking oder ein Raum mit Freunden per 6-stelligem Code.",325:"Party",326:"Quiz",
 327:"Tritt der Testgruppe mit dem Google-Konto bei, das du im Play Store nutzt.",328:"Tippe auf der Testseite auf „Tester werden“.",329:"Dein Feedback formt das Spiel.",331:"Screenshot von Hype Puzzle",
 333:"Dein Rucksack ist deine Armee",334:"Gegenstände belegen Platz im Raster; Nachbarn stärken sich gegenseitig.",335:"85 Gegenstände, 24 Fusionen",336:"Leg einen Dolch neben einen Vampirzahn, und eine neue Waffe entsteht.",
-337:"15 Trophäen bis zum Usurpatorkönig",338:"Vier Helden, Feldanomalien und die Siegerrucksäcke anderer Spieler.",339:"Autokampf",340:"85 Gegenstände",341:"4 Helden",343:"Screenshot von Kradot Backpack",
+337:"15 Trophäen bis zum Usurpatorkönig",338:"Vier Helden, Feldanomalien und die Siegerrucksäcke anderer Spieler.",339:"Autokampf",340:"85 Gegenstände",341:"4 Helden",343:"Screenshot von Kradot Backpack Battler",
 345:"Vier Elemente",346:"Feuer brennt, Eis verlangsamt, Erde blockiert, Blitz springt über.",347:"Halte den Pass",348:"Die Horde kommt über einen einzigen Weg; wo deine Türme stehen, entscheidet alles.",
 349:"Welle um Welle",350:"Goblins, Orks und Größeres; jede Welle sucht deine Schwachstelle.",351:"Strategie",
 354:"Bau deine Lane im Kradot-Universum, stärke deine Wirtschaft, schick Angriffe zum Gegner.",355:"Benachrichtigen lassen <span class=\"arr\">↗</span>",358:"Stell deinen Kader auf, wähle die Taktik, führe die Saison.",361:"Versuche, in einer postapokalyptischen Welt zu bestehen.",

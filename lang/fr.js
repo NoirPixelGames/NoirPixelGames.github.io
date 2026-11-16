@@ -111,7 +111,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['fr'] = {
 323:"Salons en direct",324:"Matchmaking en 1 contre 1 ou salon entre amis avec un code à 6 lettres.",325:"Ambiance",326:"Quiz",
 327:"Rejoins le groupe de test avec le compte Google du Play Store.",328:"Touche « Devenir testeur » sur la page de test.",329:"Tes retours façonnent le jeu.",331:"Capture d’écran de Hype Puzzle",
 333:"Ton sac est ton armée",334:"Les objets occupent la grille ; les voisins se renforcent mutuellement.",335:"85 objets, 24 fusions",336:"Place une dague à côté d’un croc de vampire et une nouvelle arme naît.",
-337:"15 trophées jusqu’au Roi Usurpateur",338:"Quatre héros, des anomalies de terrain et les sacs gagnants des autres joueurs.",339:"Combat automatique",340:"85 objets",341:"4 héros",343:"Capture d’écran de Kradot Backpack",
+337:"15 trophées jusqu’au Roi Usurpateur",338:"Quatre héros, des anomalies de terrain et les sacs gagnants des autres joueurs.",339:"Combat automatique",340:"85 objets",341:"4 héros",343:"Capture d’écran de Kradot Backpack Battler",
 345:"Quatre éléments",346:"Le feu brûle, la glace ralentit, la terre bloque, la foudre rebondit.",347:"Tiens le col",348:"La horde emprunte un seul chemin ; l’emplacement de tes tours décide de tout.",
 349:"Vague après vague",350:"Gobelins, orcs et pire encore ; chaque vague cherche ton point faible.",351:"Stratégie",
 354:"Bâtis ton couloir dans l’univers de Kradot, développe ton économie, lance des raids chez ton rival.",355:"Être prévenu <span class=\"arr\">↗</span>",358:"Compose ton effectif, choisis ta tactique, mène la saison.",361:"Essaie de tenir debout dans un monde post-apocalyptique.",

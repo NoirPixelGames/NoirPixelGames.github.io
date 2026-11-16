@@ -111,7 +111,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['it'] = {
 323:"Stanze dal vivo",324:"Partite 1 contro 1 o una stanza con gli amici con un codice di 6 lettere.",325:"Party",326:"Quiz",
 327:"Unisciti al gruppo di test con l’account Google del Play Store.",328:"Tocca “Diventa tester” nella pagina di test.",329:"Il tuo feedback dà forma al gioco.",331:"Screenshot di Hype Puzzle",
 333:"Il tuo zaino è il tuo esercito",334:"Gli oggetti occupano spazio nella griglia; i vicini si potenziano a vicenda.",335:"85 oggetti, 24 fusioni",336:"Metti un pugnale accanto a una zanna di vampiro e nasce una nuova arma.",
-337:"15 trofei fino al Re Usurpatore",338:"Quattro eroi, anomalie del campo e gli zaini vincenti degli altri giocatori.",339:"Combattimento automatico",340:"85 oggetti",341:"4 eroi",343:"Screenshot di Kradot Backpack",
+337:"15 trofei fino al Re Usurpatore",338:"Quattro eroi, anomalie del campo e gli zaini vincenti degli altri giocatori.",339:"Combattimento automatico",340:"85 oggetti",341:"4 eroi",343:"Screenshot di Kradot Backpack Battler",
 345:"Quattro elementi",346:"Il fuoco brucia, il ghiaccio rallenta, la terra blocca, il fulmine si propaga.",347:"Difendi il passo",348:"L’orda arriva da un’unica strada; la posizione delle tue torri decide tutto.",
 349:"Ondata dopo ondata",350:"Goblin, orchi e cose più grosse; ogni ondata cerca il tuo punto debole.",351:"Strategia",
 354:"Costruisci la tua corsia nell’universo di Kradot, fai crescere l’economia, manda incursioni al rivale.",355:"Avvisami <span class=\"arr\">↗</span>",358:"Costruisci la rosa, scegli la tattica, guida la stagione.",361:"Prova a restare in piedi in un mondo post-apocalittico.",

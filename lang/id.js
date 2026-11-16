@@ -111,7 +111,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['id'] = {
 323:"Ruang langsung",324:"Pertandingan 1 lawan 1 atau ruang bersama teman dengan kode 6 huruf.",325:"Pesta",326:"Kuis",
 327:"Gabung grup penguji dengan akun Google Play Store-mu.",328:"Ketuk “Jadi penguji” di halaman pengujian.",329:"Masukanmu membentuk game.",331:"Tangkapan layar Hype Puzzle",
 333:"Ranselmu adalah pasukanmu",334:"Item mengisi ruang di kisi; item yang bersebelahan saling menguatkan.",335:"85 item, 24 fusi",336:"Letakkan belati di samping taring vampir dan lahirlah senjata baru.",
-337:"15 trofi menuju Raja Perebut Takhta",338:"Empat pahlawan, anomali medan, dan ransel pemenang milik pemain lain.",339:"Pertarungan otomatis",340:"85 item",341:"4 pahlawan",343:"Tangkapan layar Kradot Backpack",
+337:"15 trofi menuju Raja Perebut Takhta",338:"Empat pahlawan, anomali medan, dan ransel pemenang milik pemain lain.",339:"Pertarungan otomatis",340:"85 item",341:"4 pahlawan",343:"Tangkapan layar Kradot Backpack Battler",
 345:"Empat elemen",346:"Api membakar, es memperlambat, tanah menghadang, petir berantai.",347:"Pertahankan celah",348:"Gerombolan datang lewat satu jalan; posisi menaramu menentukan segalanya.",
 349:"Gelombang demi gelombang",350:"Goblin, orc, dan yang lebih besar; setiap gelombang mencari titik lemahmu.",351:"Strategi",
 354:"Bangun jalurmu di semesta Kradot, kembangkan ekonomi, kirim serangan ke lawan.",355:"Beri tahu saya <span class=\"arr\">↗</span>",358:"Bentuk skuad, pilih taktik, pimpin musim.",361:"Cobalah bertahan di dunia pasca-kiamat.",

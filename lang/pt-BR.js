@@ -111,7 +111,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['pt-BR'] = {
 323:"Salas ao vivo",324:"Partida 1 contra 1 ou uma sala com amigos usando um código de 6 letras.",325:"Festa",326:"Perguntas",
 327:"Entre no grupo de testes com a conta Google da Play Store.",328:"Toque em “Tornar-se testador” na página de teste.",329:"Seu feedback molda o jogo.",331:"Captura de tela de Hype Puzzle",
 333:"Sua mochila é seu exército",334:"Os itens ocupam espaço na grade; vizinhos se fortalecem.",335:"85 itens, 24 fusões",336:"Coloque uma adaga ao lado de uma presa de vampiro e nasce uma arma nova.",
-337:"15 troféus até o Rei Usurpador",338:"Quatro heróis, anomalias de campo e as mochilas vencedoras de outros jogadores.",339:"Batalha automática",340:"85 itens",341:"4 heróis",343:"Captura de tela de Kradot Backpack",
+337:"15 troféus até o Rei Usurpador",338:"Quatro heróis, anomalias de campo e as mochilas vencedoras de outros jogadores.",339:"Batalha automática",340:"85 itens",341:"4 heróis",343:"Captura de tela de Kradot Backpack Battler",
 345:"Quatro elementos",346:"Fogo queima, gelo desacelera, terra bloqueia, raio se propaga.",347:"Segure a passagem",348:"A horda vem por um só caminho; onde suas torres ficam decide tudo.",
 349:"Onda após onda",350:"Goblins, orcs e coisas maiores; cada onda procura seu ponto fraco.",351:"Estratégia",
 354:"Monte sua rota no universo Kradot, faça a economia crescer e envie ataques ao rival.",355:"Quero ser avisado <span class=\"arr\">↗</span>",358:"Monte o elenco, escolha a tática, comande a temporada.",361:"Tente continuar de pé num mundo pós-apocalíptico.",
