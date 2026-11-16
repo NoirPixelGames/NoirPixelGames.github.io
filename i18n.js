@@ -26,7 +26,7 @@
     const base = t.split('-')[0];
     return CODES.includes(base) ? base : null;
   };
-  const browser = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'tr']);
+  const browser = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
   const region = (browser.map(t => t.split('-')[1]).find(Boolean) || '').toUpperCase()
     || (/Istanbul/.test(Intl.DateTimeFormat().resolvedOptions().timeZone || '') ? 'TR' : '');
   const suggested = [...new Set([...browser.map(norm).filter(Boolean), ...(REGION[region] || []), 'en', 'tr'])];
@@ -34,7 +34,11 @@
   let saved = null;
   try { saved = localStorage.getItem('npg-lang'); } catch (e) { /* depolama kapali */ }
   if (saved === 'pt') saved = 'pt-BR';
-  let lang = CODES.includes(saved) ? saved : (browser.map(norm).find(Boolean) || 'en');
+  // ?lang=en gibi bir link (sosyal medya, reklam) dili zorlar ve secim olarak kaydedilir
+  let fromUrl = null;
+  try { fromUrl = norm(new URLSearchParams(location.search).get('lang')); } catch (e) { /* eski tarayici */ }
+  if (fromUrl) try { localStorage.setItem('npg-lang', fromUrl); } catch (e) { /* depolama kapali */ }
+  let lang = fromUrl || (CODES.includes(saved) ? saved : (browser.map(norm).find(Boolean) || 'en'));
 
   // yaprak ogeler: metni tek parca cevrilecek en kucuk kutular. Icinde yalniz vurgu (em/strong/i/br), ok isareti (span.arr)
   // ya da metnin arasina gomulu link olabilir. Link adresleri anahtardan cikarilir, ceviride kaynaktaki sirayla geri takilir.
