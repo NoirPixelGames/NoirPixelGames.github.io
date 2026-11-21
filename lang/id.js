@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['id'] = {
 311:"Teka-teki",312:"Harian",313:"Offline",314:"4 bahasa",316:"Tangkapan layar Daily Logic Puzzles",318:"Jadi penguji <span class=\"arr\">→</span>",
 319:"Jawaban populer",320:"Bukan jawaban yang benar, tapi yang akan dipilih kebanyakan orang.",321:"Gambar &amp; Nilai",322:"Tema sama untuk semua, waktu satu menit; pemenang diumumkan besok pagi.",
 323:"Ruang langsung",324:"Pertandingan 1 lawan 1 atau ruang bersama teman dengan kode 6 huruf.",325:"Pesta",326:"Kuis",
-327:"Gabung grup penguji dengan akun Google Play Store-mu.",328:"Ketuk “Jadi penguji” di halaman pengujian.",329:"Masukanmu membentuk game.",331:"Tangkapan layar Hype Puzzle",
+327:"Gabung grup penguji dengan akun Google Play Store-mu.",328:"Ketuk “Jadi penguji” di halaman pengujian.",329:"Masukanmu membentuk game.",331:"Tangkapan layar Hype Puzzles Online",
 333:"Ranselmu adalah pasukanmu",334:"Item mengisi ruang di kisi; item yang bersebelahan saling menguatkan.",335:"219 item, 96 fusi",336:"Letakkan belati di samping taring vampir dan lahirlah senjata baru.",
 337:"15 trofi menuju Raja Perebut Takhta",338:"Empat pahlawan, anomali medan, dan ransel pemenang milik pemain lain.",339:"Pertarungan otomatis",340:"219 item",341:"4 pahlawan",343:"Tangkapan layar Kradot Backpack Battler",
 345:"Empat elemen",346:"Api membakar, es memperlambat, tanah menghadang, petir berantai.",347:"Pertahankan celah",348:"Gerombolan datang lewat satu jalan; posisi menaramu menentukan segalanya.",

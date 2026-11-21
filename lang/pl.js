@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['pl'] = {
 311:"Łamigłówka",312:"Codziennie",313:"Offline",314:"4 języki",316:"Zrzut ekranu Daily Logic Puzzles",318:"Zostań testerem <span class=\"arr\">→</span>",
 319:"Popularna odpowiedź",320:"Nie szukaj poprawnej odpowiedzi, tylko tej, którą wybrałaby większość.",321:"Rysuj i oceniaj",322:"Ten sam temat dla wszystkich, minuta na zegarze; zwycięzcy następnego ranka.",
 323:"Pokoje na żywo",324:"Pojedynek 1 na 1 albo pokój ze znajomymi na 6-literowy kod.",325:"Impreza",326:"Quiz",
-327:"Dołącz do grupy testowej kontem Google ze Sklepu Play.",328:"Na stronie testu stuknij „Zostań testerem”.",329:"Twoja opinia kształtuje grę.",331:"Zrzut ekranu Hype Puzzle",
+327:"Dołącz do grupy testowej kontem Google ze Sklepu Play.",328:"Na stronie testu stuknij „Zostań testerem”.",329:"Twoja opinia kształtuje grę.",331:"Zrzut ekranu Hype Puzzles Online",
 333:"Plecak to twoja armia",334:"Przedmioty zajmują miejsce na siatce; sąsiedzi wzmacniają się nawzajem.",335:"219 przedmiotów, 96 fuzji",336:"Połóż sztylet obok kła wampira, a narodzi się nowa broń.",
 337:"15 trofeów do Króla Uzurpatora",338:"Czterech bohaterów, anomalie pola i zwycięskie plecaki innych graczy.",339:"Automatyczna walka",340:"219 przedmiotów",341:"4 bohaterów",343:"Zrzut ekranu Kradot Backpack Battler",
 345:"Cztery żywioły",346:"Ogień pali, lód spowalnia, ziemia blokuje, błyskawica przeskakuje.",347:"Utrzymaj przełęcz",348:"Horda nadciąga jedną drogą; ustawienie wież decyduje o wszystkim.",

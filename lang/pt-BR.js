@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['pt-BR'] = {
 311:"Quebra-cabeça",312:"Diário",313:"Offline",314:"4 idiomas",316:"Captura de tela de Daily Logic Puzzles",318:"Seja testador <span class=\"arr\">→</span>",
 319:"Resposta popular",320:"Não ache a resposta certa, e sim o que a maioria diria.",321:"Desenhe e avalie",322:"Mesmo tema para todos, um minuto no relógio; os vencedores saem na manhã seguinte.",
 323:"Salas ao vivo",324:"Partida 1 contra 1 ou uma sala com amigos usando um código de 6 letras.",325:"Festa",326:"Perguntas",
-327:"Entre no grupo de testes com a conta Google da Play Store.",328:"Toque em “Tornar-se testador” na página de teste.",329:"Seu feedback molda o jogo.",331:"Captura de tela de Hype Puzzle",
+327:"Entre no grupo de testes com a conta Google da Play Store.",328:"Toque em “Tornar-se testador” na página de teste.",329:"Seu feedback molda o jogo.",331:"Captura de tela de Hype Puzzles Online",
 333:"Sua mochila é seu exército",334:"Os itens ocupam espaço na grade; vizinhos se fortalecem.",335:"219 itens, 96 fusões",336:"Coloque uma adaga ao lado de uma presa de vampiro e nasce uma arma nova.",
 337:"15 troféus até o Rei Usurpador",338:"Quatro heróis, anomalias de campo e as mochilas vencedoras de outros jogadores.",339:"Batalha automática",340:"219 itens",341:"4 heróis",343:"Captura de tela de Kradot Backpack Battler",
 345:"Quatro elementos",346:"Fogo queima, gelo desacelera, terra bloqueia, raio se propaga.",347:"Segure a passagem",348:"A horda vem por um só caminho; onde suas torres ficam decide tudo.",

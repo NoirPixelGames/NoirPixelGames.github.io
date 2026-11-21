@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['de'] = {
 311:"Rätsel",312:"Täglich",313:"Offline",314:"4 Sprachen",316:"Screenshot von Daily Logic Puzzles",318:"Tester werden <span class=\"arr\">→</span>",
 319:"Top-Antworten",320:"Finde nicht die richtige Antwort, sondern was die meisten sagen würden.",321:"Zeichnen &amp; Bewerten",322:"Gleiches Thema für alle, eine Minute Zeit; die Gewinner gibt’s am nächsten Morgen.",
 323:"Live-Räume",324:"1-gegen-1-Matchmaking oder ein Raum mit Freunden per 6-stelligem Code.",325:"Party",326:"Quiz",
-327:"Tritt der Testgruppe mit dem Google-Konto bei, das du im Play Store nutzt.",328:"Tippe auf der Testseite auf „Tester werden“.",329:"Dein Feedback formt das Spiel.",331:"Screenshot von Hype Puzzle",
+327:"Tritt der Testgruppe mit dem Google-Konto bei, das du im Play Store nutzt.",328:"Tippe auf der Testseite auf „Tester werden“.",329:"Dein Feedback formt das Spiel.",331:"Screenshot von Hype Puzzles Online",
 333:"Dein Rucksack ist deine Armee",334:"Gegenstände belegen Platz im Raster; Nachbarn stärken sich gegenseitig.",335:"219 Gegenstände, 96 Fusionen",336:"Leg einen Dolch neben einen Vampirzahn, und eine neue Waffe entsteht.",
 337:"15 Trophäen bis zum Usurpatorkönig",338:"Vier Helden, Feldanomalien und die Siegerrucksäcke anderer Spieler.",339:"Autokampf",340:"219 Gegenstände",341:"4 Helden",343:"Screenshot von Kradot Backpack Battler",
 345:"Vier Elemente",346:"Feuer brennt, Eis verlangsamt, Erde blockiert, Blitz springt über.",347:"Halte den Pass",348:"Die Horde kommt über einen einzigen Weg; wo deine Türme stehen, entscheidet alles.",

@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['es'] = {
 311:"Puzle",312:"Diario",313:"Sin conexión",314:"4 idiomas",316:"Captura de Daily Logic Puzzles",318:"Hazte probador <span class=\"arr\">→</span>",
 319:"Respuesta popular",320:"No busques la respuesta correcta, sino lo que diría la mayoría.",321:"Dibuja y puntúa",322:"El mismo tema para todos, un minuto de tiempo; los ganadores, a la mañana siguiente.",
 323:"Salas en vivo",324:"Emparejamiento 1 contra 1 o una sala con amigos con un código de 6 letras.",325:"Fiesta",326:"Preguntas",
-327:"Únete al grupo de pruebas con la cuenta de Google de Play Store.",328:"Toca «Hacerse probador» en la página de prueba.",329:"Tus comentarios dan forma al juego.",331:"Captura de Hype Puzzle",
+327:"Únete al grupo de pruebas con la cuenta de Google de Play Store.",328:"Toca «Hacerse probador» en la página de prueba.",329:"Tus comentarios dan forma al juego.",331:"Captura de Hype Puzzles Online",
 333:"Tu mochila es tu ejército",334:"Los objetos ocupan espacio en la cuadrícula; los vecinos se potencian entre sí.",335:"219 objetos, 96 fusiones",336:"Pon una daga junto a un colmillo de vampiro y nace un arma nueva.",
 337:"15 trofeos hasta el Rey Usurpador",338:"Cuatro héroes, anomalías de campo y las mochilas ganadoras de otros jugadores.",339:"Combate automático",340:"219 objetos",341:"4 héroes",343:"Captura de Kradot Backpack Battler",
 345:"Cuatro elementos",346:"El fuego quema, el hielo ralentiza, la tierra bloquea y el rayo encadena.",347:"Defiende el paso",348:"La horda llega por un solo camino; dónde pongas tus torres lo decide todo.",

@@ -24,7 +24,7 @@ terms-of-service.html   ⚠
 delete-data.html        ⚠
 test.html               ⚠ testçi davet sayfası, duyurularda paylaşıldı
 pixel-daily-puzzles/    ⚠ aynısı Daily Logic Puzzles için
-pixel-hype-puzzle/      ⚠ aynısı Hype Puzzle için
+pixel-hype-puzzle/      ⚠ aynısı Hype Puzzles Online için
 app-ads.txt             ⚠ AdMob doğrulaması — kökte kalmalı
 ```
 

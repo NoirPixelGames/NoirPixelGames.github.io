@@ -109,7 +109,7 @@ NP.LANG = NP.LANG || {}; NP.LANG['fr'] = {
 311:"Puzzle",312:"Quotidien",313:"Hors ligne",314:"4 langues",316:"Capture d’écran de Daily Logic Puzzles",318:"Devenir testeur <span class=\"arr\">→</span>",
 319:"Réponse populaire",320:"Trouve non pas la bonne réponse, mais ce que la majorité dirait.",321:"Dessine &amp; Note",322:"Même thème pour tous, une minute au chrono ; les gagnants le lendemain matin.",
 323:"Salons en direct",324:"Matchmaking en 1 contre 1 ou salon entre amis avec un code à 6 lettres.",325:"Ambiance",326:"Quiz",
-327:"Rejoins le groupe de test avec le compte Google du Play Store.",328:"Touche « Devenir testeur » sur la page de test.",329:"Tes retours façonnent le jeu.",331:"Capture d’écran de Hype Puzzle",
+327:"Rejoins le groupe de test avec le compte Google du Play Store.",328:"Touche « Devenir testeur » sur la page de test.",329:"Tes retours façonnent le jeu.",331:"Capture d’écran de Hype Puzzles Online",
 333:"Ton sac est ton armée",334:"Les objets occupent la grille ; les voisins se renforcent mutuellement.",335:"219 objets, 96 fusions",336:"Place une dague à côté d’un croc de vampire et une nouvelle arme naît.",
 337:"15 trophées jusqu’au Roi Usurpateur",338:"Quatre héros, des anomalies de terrain et les sacs gagnants des autres joueurs.",339:"Combat automatique",340:"219 objets",341:"4 héros",343:"Capture d’écran de Kradot Backpack Battler",
 345:"Quatre éléments",346:"Le feu brûle, la glace ralentit, la terre bloque, la foudre rebondit.",347:"Tiens le col",348:"La horde emprunte un seul chemin ; l’emplacement de tes tours décide de tout.",
