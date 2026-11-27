@@ -66,7 +66,7 @@ NP.GAMES = [
     features: [['60 saniye', 'Sirenler çalarken evden kimi ve neyi alacağını sen seç.'],
       ['Sığınakta günler', 'Erzakı paylaştır, olaylara karar ver, günleri say.'],
       ['Liderini seç', 'Ailenin başına kimin geçtiği bütün oyunu değiştirir.']],
-    facts: ['Hayatta kalma', 'Tek oyunculu', 'Çevrimdışı', '8 dil'] },
+    facts: ['Hayatta kalma', 'Tek oyunculu', 'Çevrimdışı', '14 dil'] },
   { slug: 'mars-sweepers', name: 'Mars Sweepers', genre: 'Mars’ta hayatta kalma', status: 'dev', mono: 'MS', c1: '#ff7a3d', c2: '#170a06',
     lede: 'Kızıl tozu süpür, Hab’ını kur, patatesini yetiştir. Mars’ı adım adım yaşanır bir yere çevir.' },
   { slug: 'ludus', name: 'Ludus', genre: 'Gladyatör okulu yönetimi', status: 'dev', mono: 'LU', c1: '#d4a04a', c2: '#160e07',
