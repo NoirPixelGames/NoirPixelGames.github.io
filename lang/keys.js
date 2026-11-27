@@ -377,4 +377,5 @@ NP.KEYS = ["İçeriğe geç",
 "Ailenin başına kimin geçtiği bütün oyunu değiştirir.",
 "Tek oyunculu",
 "Yayında · Günlük mantık bulmacaları",
-"Kapalı test · Hayatta kalma"];
+"Kapalı test · Hayatta kalma",
+"14 dil"];
